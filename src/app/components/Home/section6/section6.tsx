@@ -12,7 +12,7 @@ const Section6 = () => {
           <RdStationForm/>
         </div>
         <div className="flex justify-center w-1/2 items-center p-5">
-          <Image src={""} alt={""} />
+          {/* <Image src={""} alt={""} />*/}
         </div>
       </div>
     </Section>
