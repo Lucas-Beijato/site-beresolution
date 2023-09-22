@@ -1,4 +1,4 @@
-import Title from "../../title/title"
+import Title from "../../title"
 import Section from "../../containerSection/containerSection"
 import Image from "next/image"
 import RdStationForm from "../../rdStationForm"
