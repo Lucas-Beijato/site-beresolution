@@ -1,4 +1,4 @@
-import Title from "../../Title/title"
+import Title from "../../title/title"
 import Section from "../../containerSection/containerSection"
 import Image from "next/image"
 import defaulMoneyIcon from '../../../../../public/defaulMoneyIcon.png'

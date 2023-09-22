@@ -1,7 +1,7 @@
 import Image from "next/image"
 import defaultIcon from '../../../../../public/defaultIcon.png'
 import logoSIEGE from '../../../../../public/logos/logo siege.png'
-import Title from "../../Title/title"
+import Title from "../../title/title"
 import Section from "../../containerSection/containerSection"
 
 const Section2 = () => {

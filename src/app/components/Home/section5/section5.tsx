@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react"
-import Title from "../../Title/title"
+import Title from "../../title/title"
 import Section from "../../containerSection/containerSection"
 import { BiDownArrowAlt } from "react-icons/bi"
 
