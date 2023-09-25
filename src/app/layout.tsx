@@ -1,5 +1,5 @@
-import Footer from './components/footer'
-import Header from './components/header'
+import Footer from '@/app/components/footer'
+import Header from '@/app/components/header'
 import './globals.css'
 import type { Metadata } from 'next'
 
@@ -19,7 +19,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Footer/>
         </main>
       </body>
-
     </html>
   )
 

@@ -1,10 +1,10 @@
 import Image from "next/image"
 import defaultIcon from '../../../../../public/defaultIcon.png'
 import logoSIEGE from '../../../../../public/logos/logo siege.png'
-import Title from "../../title"
-import Section from "../../containerSection/containerSection"
+import Title from "@/app/components/title"
+import Section from "@/app/components/containerSection";
 
-const Section2 = () => {
+export default function Section2() {
   return (
 
     <Section bgWhite removePaddingX>
@@ -57,5 +57,3 @@ const Section2 = () => {
 
   )
 }
-
-export default Section2

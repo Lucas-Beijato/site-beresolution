@@ -1,6 +1,6 @@
 import Script from "next/script"
 
-const RdStationForm = () => {
+export default function RdStationForm() {
   return (
     <>
       <div role="main" id="form-briefing-desenvolvimento-1e59238d9ca960ac0f6e"></div>
@@ -9,5 +9,3 @@ const RdStationForm = () => {
     </>
   )
 }
-
-export default RdStationForm

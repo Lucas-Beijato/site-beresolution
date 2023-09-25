@@ -6,7 +6,7 @@ interface SectionProps {
   removePaddingX?: boolean
 }
 
-const Section = ({ children, bgWhite, removePaddingX }: SectionProps) => {
+export default function Section ({ children, bgWhite, removePaddingX }: SectionProps) {
   return (
     <section className={`flex flex-col w-full ${ bgWhite && 'bg-white' } justify-start items-center`}>
       <div className={`flex flex-col xl:w-mediunScreen py-20 ${ !removePaddingX && 'px-20' } justify-center items-center`}>
@@ -15,5 +15,3 @@ const Section = ({ children, bgWhite, removePaddingX }: SectionProps) => {
     </section>
   )
 }
-
-export default Section

@@ -1,9 +1,9 @@
-import Section from "../../containerSection/containerSection"
+import Section from "@/app/components/containerSection"
 import Image from "next/image"
 import defaultIcon from '../../../../../public/defaultIcon.png'
 import Link from "next/link"
 
-const Section4 = () => {
+export default function Section4() {
   return (
     <Section>
 
@@ -40,5 +40,3 @@ const Section4 = () => {
     </Section>
   )
 }
-
-export default Section4

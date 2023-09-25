@@ -5,7 +5,7 @@ interface TitleProps {
   colorTitleDark?: boolean
 }
 
-const Title = ({ title, subtitle, colorTitleDark, id }: TitleProps) => {
+export default function Title({ title, subtitle, colorTitleDark, id }: TitleProps) {
   return (
     <>
       <h3 id={id} className="text-BeGreenColor text-center text-lg font-medium scroll-mt-56">{ subtitle }</h3>
@@ -13,5 +13,3 @@ const Title = ({ title, subtitle, colorTitleDark, id }: TitleProps) => {
     </>
   )
 }
-
-export default Title

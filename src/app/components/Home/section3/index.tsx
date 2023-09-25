@@ -1,9 +1,9 @@
-import Title from "../../title"
-import Section from "../../containerSection/containerSection"
+import Title from "@/app/components/title"
+import Section from "@/app/components/containerSection"
 import Image from "next/image"
 import defaulMoneyIcon from '../../../../../public/defaulMoneyIcon.png'
 
-const Section3 = () => {
+export default function Section3() {
   return (
     <Section removePaddingX>
       <Title id="atividades" title={"Atividades"} subtitle={"SETORES QUE ATUAMOS"} />
@@ -124,5 +124,3 @@ const Section3 = () => {
     </Section>
   )
 }
-
-export default Section3

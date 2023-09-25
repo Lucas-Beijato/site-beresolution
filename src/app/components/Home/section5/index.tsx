@@ -1,10 +1,10 @@
 "use client"
 import { useState } from "react"
-import Title from "../../title"
-import Section from "../../containerSection/containerSection"
+import Title from "@/app/components/title"
+import Section from "@/app/components/containerSection"
 import { BiDownArrowAlt } from "react-icons/bi"
 
-const Section5 = () => {
+export default function Section5() {
 
   const [showHideImplantacao, setShowHideImplantacao] = useState(true)
   const [showHideSuporte, setShowHideSuporte] = useState(false)
@@ -107,5 +107,3 @@ const Section5 = () => {
     </Section>
   )
 }
-
-export default Section5

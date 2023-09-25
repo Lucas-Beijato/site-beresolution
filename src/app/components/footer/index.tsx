@@ -1,3 +1,4 @@
+"use client"
 import logo from '../../../../public/logos/mainLogo.png'
 import phoneIcon from '../../../../public/VectorPhone.png'
 import instaIcon from '../../../../public/VectorInsta.png'
@@ -5,14 +6,22 @@ import faceIcon from '../../../../public/VectorFace.png'
 import Image from 'next/image'
 import { BiSolidRightArrow } from 'react-icons/bi';
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
 
-const Footer = () => {
+export default function Footer() {
+
+  const [baseURL, setBaseURL] = useState('')
+
+  useEffect(() => {
+    setBaseURL(window.location.origin)
+  })
+
   return (
     <footer className="w-full flex justify-center items-center py-6">
       <div className="w-mediunScreen flex flex-row">
 
         <div className="w-1/2 flex flex-col justify-start">
-          <Link href={'/'}>
+          <Link href={ baseURL + '/#inicio'}>
             <Image src={logo} alt={'Be Resolution logo'} />
           </Link>
           <h2 className='text-3xl font-bold text-white'>Somos</h2>
@@ -47,5 +56,3 @@ const Footer = () => {
     </footer>
   )
 }
-
-export default Footer

@@ -1,9 +1,8 @@
-import Title from "../../title"
-import Section from "../../containerSection/containerSection"
-import Image from "next/image"
+import Title from "@/app/components/title"
+import Section from "@/app/components/containerSection"
 import RdStationForm from "../../rdStationForm"
 
-const Section6 = () => {
+export default function Section6() {
   return (
     <Section bgWhite>
       <div id="contato" className="flex flex-row w-full">
@@ -18,5 +17,3 @@ const Section6 = () => {
     </Section>
   )
 }
-
-export default Section6
