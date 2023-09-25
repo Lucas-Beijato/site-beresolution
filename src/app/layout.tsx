@@ -6,6 +6,9 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Be Resolution',
   description: 'Created by RRXP Martech',
+  icons: {
+    icon: '/icon/favicon.ico'
+  }
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
