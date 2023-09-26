@@ -18,22 +18,22 @@ export default function Footer() {
 
   return (
     <footer className="w-full flex justify-center items-center py-6">
-      <div className="w-mediunScreen flex flex-row">
+      <div className="w-mediunScreen flex justify-center items-center flex-col xl:flex-row">
 
-        <div className="w-1/2 flex flex-col justify-start">
+        <div className="w-full p-5 xl:w-1/2 xl:p-0 flex flex-col justify-start">
           <Link href={ baseURL + '/#inicio'}>
-            <Image loading='lazy' src={logo} alt={'Be Resolution logo'} />
+            <Image className='w-4/6 xl:w-1/3' loading='lazy' src={logo} alt={'Be Resolution logo'} />
           </Link>
-          <h2 className='text-3xl font-bold text-white'>Somos</h2>
-          <p className='text-xl text-white flex flex-row items-center'><BiSolidRightArrow className='fill-BeGreenColor pr-1' />Rápidos</p>
-          <p className='text-xl text-white flex flex-row items-center'><BiSolidRightArrow className='fill-BeGreenColor pr-1' />Diferentes</p>
-          <p className='text-xl text-white flex flex-row items-center'><BiSolidRightArrow className='fill-BeGreenColor pr-1' />Efetivos</p>
+          <h2 className='text-xl xl:text-3xl font-bold text-white'>Somos</h2>
+          <p className='xl:text-xl text-white flex flex-row items-center'><BiSolidRightArrow className='fill-BeGreenColor pr-1' />Rápidos</p>
+          <p className='xl:text-xl text-white flex flex-row items-center'><BiSolidRightArrow className='fill-BeGreenColor pr-1' />Diferentes</p>
+          <p className='xl:text-xl text-white flex flex-row items-center'><BiSolidRightArrow className='fill-BeGreenColor pr-1' />Efetivos</p>
         </div>
 
-        <div className="w-1/2 flex justify-end">
+        <div className="w-full p-5 xl:w-1/2 flex justify-start xl:justify-end">
           <div className='w-fit'>
-            <h2 className='text-white text-4xl font-semibold'>Entre em contato</h2>
-            <h3 className='text-xl text-white py-2'>Nossas Redes e Contatos:</h3>
+            <h2 className='text-white text-2xl xl:text-4xl font-semibold'>Entre em contato</h2>
+            <h3 className='text-lg xl:text-xl text-white py-2'>Nossas Redes e Contatos:</h3>
             <div className='flex flex-row'>
               <Link href={''}>
                 <Image loading='lazy' className='mx-1 hover:scale-105 w-10 transition duration-150 ' src={phoneIcon} alt={'Telefone Be Resolution'} />
@@ -46,9 +46,9 @@ export default function Footer() {
               </Link>
             </div>
             <Link href={''}>
-              <p className='text-xl text-white pt-3'>{'email@email.com.br'}</p>
+              <p className='text-lg xl:text-xl text-white pt-3'>{'email@email.com.br'}</p>
             </Link>
-            <p className='text-xl text-white pt-3'>{'(44) 1 11222333'}</p>
+            <p className='text-lg xl:text-xl text-white pt-3'>{'(44) 1 11222333'}</p>
           </div>
         </div>
 
