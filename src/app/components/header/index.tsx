@@ -116,9 +116,9 @@ export default function Header() {
                 <button className='w-7 h-7' onClick={() => setMenuMobileOpen()}><FaBars className='w-full h-full fill-BeGreenColor' /></button>
               </div>
 
-              <div onClick={() => setMenuMobileClose()} id='menuMobileModal' className='hidden bg-[#000] bg-opacity-50 flex-col flex top-0 bottom-0 left-0 fixed z-10 justify-center items-center w-screen xl:hidden'>
-                <div className='w-11/12 flex flex-col items-start text-white bg-BeColorBG p-4 rounded-lg'>
-                  <button className='w-full flex pb-2 justify-end'><AiFillCloseSquare className="w-7 h-7 fill-BeGreenColor"/></button>
+              <div id='menuMobileModal' className='hidden bg-[#000] bg-opacity-50 flex-col flex top-0 bottom-0 left-0 fixed z-10 justify-center items-center w-screen xl:hidden'>
+                <div className='w-11/12 flex flex-col items-end text-white bg-BeColorBG p-4 rounded-lg'>
+                  <button onClick={() => setMenuMobileClose()} className='flex pb-2 justify-end'><AiFillCloseSquare className="w-7 h-7 fill-BeGreenColor"/></button>
                   <Link className='bg-BeGreenColor w-full rounded-lg p-3 my-1' onClick={() => setMenuMobileClose()} href={baseURL + '/#inicio'}>Início</Link>
                   <Link className='bg-BeGreenColor w-full rounded-lg p-3 my-1' onClick={() => setMenuMobileClose()} href={'/atividades'}>Atividades</Link>
                   <Link className='bg-BeGreenColor w-full rounded-lg p-3 my-1' onClick={() => setMenuMobileClose()} href={'/solucoes'}>Soluções</Link>
