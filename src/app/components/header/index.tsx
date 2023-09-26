@@ -57,7 +57,7 @@ export default function Header () {
       <div id='mainContainerHeader' className='w-mediunScreen flex flex-row justify-between items-center navAnimationEnd'>
         <div className='w-2/6 flex flex-row justify-start items-center'>
           <Link href={ baseURL + '/#inicio'}>
-            <Image priority src={logo} alt={'Be Resolution logo'} />
+            <Image loading='lazy' src={logo} alt={'Be Resolution logo'} />
           </Link>
         </div>
 

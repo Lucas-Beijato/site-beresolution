@@ -22,7 +22,7 @@ export default function Footer() {
 
         <div className="w-1/2 flex flex-col justify-start">
           <Link href={ baseURL + '/#inicio'}>
-            <Image src={logo} alt={'Be Resolution logo'} />
+            <Image loading='lazy' src={logo} alt={'Be Resolution logo'} />
           </Link>
           <h2 className='text-3xl font-bold text-white'>Somos</h2>
           <p className='text-xl text-white flex flex-row items-center'><BiSolidRightArrow className='fill-BeGreenColor pr-1' />Rápidos</p>
@@ -36,13 +36,13 @@ export default function Footer() {
             <h3 className='text-xl text-white py-2'>Nossas Redes e Contatos:</h3>
             <div className='flex flex-row'>
               <Link href={''}>
-                <Image className='mx-1 hover:scale-105 w-10 transition duration-150 ' src={phoneIcon} alt={'Telefone Be Resolution'} />
+                <Image loading='lazy' className='mx-1 hover:scale-105 w-10 transition duration-150 ' src={phoneIcon} alt={'Telefone Be Resolution'} />
               </Link>
               <Link href={''}>
-                <Image className='mx-1 hover:scale-105 w-10 transition duration-150' src={instaIcon} alt={'Instagram Be Resolution'} />
+                <Image loading='lazy' className='mx-1 hover:scale-105 w-10 transition duration-150' src={instaIcon} alt={'Instagram Be Resolution'} />
               </Link>
               <Link href={''}>
-                <Image className='mx-1 hover:scale-105 w-10 transition duration-150' src={faceIcon} alt={'Facebook Be Resolution'} />
+                <Image loading='lazy' className='mx-1 hover:scale-105 w-10 transition duration-150' src={faceIcon} alt={'Facebook Be Resolution'} />
               </Link>
             </div>
             <Link href={''}>
