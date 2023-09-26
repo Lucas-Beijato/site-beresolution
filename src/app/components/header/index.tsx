@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react';
 import { IoMdArrowDropdown } from 'react-icons/io';
 import { FaBars } from 'react-icons/fa';
+import { AiFillCloseSquare } from 'react-icons/ai'
 
 function setDropdowAtividades(isOpen: string) {
   switch (isOpen) {
@@ -100,7 +101,6 @@ export default function Header() {
                   </div>
                 </div>
 
-                {/* <Link className='hover:text-BeGreenColor px-2' href="">Contato</Link> */}
                 <Link className='hover:text-BeGreenColor px-2' href={baseURL + '/#sobreNos'}>Sobre nós</Link>
               </div>
 
@@ -117,19 +117,17 @@ export default function Header() {
               </div>
 
               <div onClick={() => setMenuMobileClose()} id='menuMobileModal' className='hidden bg-[#000] bg-opacity-50 flex-col flex top-0 bottom-0 left-0 fixed z-10 justify-center items-center w-screen xl:hidden'>
-                <div className='w-1/2 flex flex-col items-start text-white'>
-                  <Link onClick={() => setMenuMobileClose()} href={baseURL + '/#inicio'}>Início</Link>
-                  <Link onClick={() => setMenuMobileClose()} href={'/atividades'}>Atividades</Link>
-                  <Link onClick={() => setMenuMobileClose()} href={'/solucoes'}>Soluções</Link>
-                  <Link onClick={() => setMenuMobileClose()} href={baseURL + '/#sobreNos'}>Sobre nós</Link>
-                  <Link onClick={() => setMenuMobileClose()} href={baseURL + '/#contato'}>Entre em contato</Link>
+                <div className='w-11/12 flex flex-col items-start text-white bg-BeColorBG p-4 rounded-lg'>
+                  <button className='w-full flex pb-2 justify-end'><AiFillCloseSquare className="w-7 h-7 fill-BeGreenColor"/></button>
+                  <Link className='bg-BeGreenColor w-full rounded-lg p-3 my-1' onClick={() => setMenuMobileClose()} href={baseURL + '/#inicio'}>Início</Link>
+                  <Link className='bg-BeGreenColor w-full rounded-lg p-3 my-1' onClick={() => setMenuMobileClose()} href={'/atividades'}>Atividades</Link>
+                  <Link className='bg-BeGreenColor w-full rounded-lg p-3 my-1' onClick={() => setMenuMobileClose()} href={'/solucoes'}>Soluções</Link>
+                  <Link className='bg-BeGreenColor w-full rounded-lg p-3 my-1' onClick={() => setMenuMobileClose()} href={baseURL + '/#sobreNos'}>Sobre nós</Link>
+                  <Link className='bg-BeGreenColor w-full rounded-lg p-3 my-1' onClick={() => setMenuMobileClose()} href={baseURL + '/#contato'}>Entre em contato</Link>
                 </div>
               </div>
             </>
           }
-
-
-
 
         </div>
       </div>
