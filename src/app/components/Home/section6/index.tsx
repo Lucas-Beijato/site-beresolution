@@ -5,8 +5,8 @@ import RdStationFormScript from "../../rdStationForm"
 export default function Section6() {
   return (
     <Section bgWhite>
-      <div id="contato" className="flex flex-row w-full">
-        <div className="flex flex-col w-1/2 rounded-lg border-2 p-5 border-BeGreenColor">
+      <div id="contato" className="flex flex-row w-full flex-wrap">
+        <div className="flex flex-col w-full xl:w-1/2 rounded-lg border-2 p-5 border-BeGreenColor">
           <Title colorTitleDark title={"Entre em contato"} subtitle={"Sed ut perspiciatis"} />
           <RdStationFormScript/>
         </div>

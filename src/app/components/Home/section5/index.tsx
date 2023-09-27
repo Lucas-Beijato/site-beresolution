@@ -10,37 +10,14 @@ export default function Section5() {
   const [showHideSuporte, setShowHideSuporte] = useState(false)
   const [showHideDesenvolvimento, setShowHideDesenvolvimento] = useState(false)
 
-  const hadleShow_Hide = (id: string) => {
-    switch (id) {
-      case 'implantacao': {
-        setShowHideImplantacao(true)
-        setShowHideSuporte(false)
-        setShowHideDesenvolvimento(false)
-        break
-      }
-      case 'suporte': {
-        setShowHideImplantacao(false)
-        setShowHideSuporte(true)
-        setShowHideDesenvolvimento(false)
-        break
-      }
-      case 'desenvolvimento': {
-        setShowHideImplantacao(false)
-        setShowHideSuporte(false)
-        setShowHideDesenvolvimento(true)
-        break
-      }
-    }
-  }
-
   return (
     <Section>
       <Title title={"Porque a Be Resolution"} subtitle={"A BE RESOLUTION TE AJUDA"} />
 
       <div className="flex flex-col">
-        <div onClick={() => { setShowHideImplantacao(!showHideImplantacao) }} className="h-fit cursor-pointer rounded-lg border-2 mt-5 p-5 border-BeGreenColor">
+        <div onClick={() => { setShowHideImplantacao(!showHideImplantacao) }} className="h-fit cursor-pointer rounded-lg border-2 mt-5 p-3 xl:p-5 border-BeGreenColor">
           <div className="flex flex-row justify-between items-center py-2">
-            <h3 className="font-bold text-BeGreenColor text-2xl">Implantação</h3>
+            <h3 className="font-bold text-BeGreenColor text-xl xl:text-2xl">Implantação</h3>
             <BiDownArrowAlt className={`fill-BeGreenColor w-8 h-8 ${showHideImplantacao && 'rotate-180'} transition transform duration-500`} />
           </div>
 
@@ -59,9 +36,9 @@ export default function Section5() {
           </p>
         </div>
 
-        <div onClick={() => { setShowHideSuporte(!showHideSuporte) }} className="h-fit cursor-pointer rounded-lg border-2 mt-5 p-5 border-BeGreenColor">
+        <div onClick={() => { setShowHideSuporte(!showHideSuporte) }} className="h-fit cursor-pointer rounded-lg border-2 mt-5 p-3 xl:p-5 border-BeGreenColor">
           <div className="flex flex-row justify-between items-center py-2">
-            <h3 className="font-bold text-BeGreenColor text-2xl">Suporte</h3>
+            <h3 className="font-bold text-BeGreenColor text-xl xl:text-2xl">Suporte</h3>
             <BiDownArrowAlt className={`fill-BeGreenColor w-8 h-8 ${showHideSuporte && 'rotate-180'} transition transform duration-500`} />
           </div>
 
@@ -80,9 +57,9 @@ export default function Section5() {
           </p>
         </div>
 
-        <div onClick={() => { setShowHideDesenvolvimento(!showHideDesenvolvimento) }} className="h-fit cursor-pointer rounded-lg border-2 mt-5 p-5 border-BeGreenColor">
+        <div onClick={() => { setShowHideDesenvolvimento(!showHideDesenvolvimento) }} className="h-fit cursor-pointer rounded-lg border-2 mt-5 p-3 xl:p-5 border-BeGreenColor">
           <div className="flex flex-row justify-between items-center py-2">
-            <h3 className="font-bold text-BeGreenColor text-2xl">Desenvolvimento</h3>
+            <h3 className="font-bold text-BeGreenColor text-xl xl:text-2xl">Desenvolvimento</h3>
             <BiDownArrowAlt className={`fill-BeGreenColor w-8 h-8 ${showHideDesenvolvimento && 'rotate-180'} transition transform duration-500`} />
           </div>
 
