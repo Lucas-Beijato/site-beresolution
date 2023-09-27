@@ -118,13 +118,17 @@ export default function Header() {
               </div>
 
               <div id='menuMobileModal' className='hidden bg-[#000] bg-opacity-50 flex-col flex top-0 bottom-0 left-0 fixed z-10 justify-center items-center w-screen xl:hidden'>
-                <div className='w-11/12 flex flex-col items-end text-white bg-BeColorBG p-4 rounded-lg'>
+                <div className='w-11/12 flex flex-col items-end text-white bg-BeColorBG p-4 rounded-xl'>
                   <button onClick={() => setMenuMobileOpenClosed('closed')} className='flex pb-2 justify-end'><AiFillCloseSquare className="w-7 h-7 fill-BeGreenColor"/></button>
-                  <Link className='bg-BeGreenColor w-full rounded-lg p-3 my-1' onClick={() => setMenuMobileOpenClosed('closed')} href={baseURL + '/#inicio'}>Início</Link>
-                  <Link className='bg-BeGreenColor w-full rounded-lg p-3 my-1' onClick={() => setMenuMobileOpenClosed('closed')} href={'/atividades'}>Atividades</Link>
-                  <Link className='bg-BeGreenColor w-full rounded-lg p-3 my-1' onClick={() => setMenuMobileOpenClosed('closed')} href={'/solucoes'}>Soluções</Link>
-                  <Link className='bg-BeGreenColor w-full rounded-lg p-3 my-1' onClick={() => setMenuMobileOpenClosed('closed')} href={baseURL + '/#sobreNos'}>Sobre nós</Link>
-                  <Link className='bg-BeGreenColor w-full rounded-lg p-3 my-1' onClick={() => setMenuMobileOpenClosed('closed')} href={baseURL + '/#contato'}>Entre em contato</Link>
+                  <Link className='w-full border-b-2 border-BeGreenColor hover:bg-BeGreenColor p-2 my-1' onClick={() => setMenuMobileOpenClosed('closed')} href={baseURL + '/#inicio'}>Início</Link>
+                  <Link className='w-full border-b-2 border-BeGreenColor hover:bg-BeGreenColor p-2 my-1' onClick={() => setMenuMobileOpenClosed('closed')} href={'/atividades'}>Atividades</Link>
+                  <Link className='w-full border-b-2 border-BeGreenColor hover:bg-BeGreenColor p-2 my-1' onClick={() => setMenuMobileOpenClosed('closed')} href={'/solucoes'}>Soluções</Link>
+                  <Link className='w-full border-b-2 border-BeGreenColor hover:bg-BeGreenColor p-2 my-1' onClick={() => setMenuMobileOpenClosed('closed')} href={baseURL + '/#sobreNos'}>Sobre nós</Link>
+                  <Link className='w-full border-b-2 border-BeGreenColor hover:bg-BeGreenColor p-2 my-1' onClick={() => setMenuMobileOpenClosed('closed')} href={baseURL + '/#contato'}>Entre em contato</Link>
+                  <div className='flex w-full mt-4 justify-center items-center'>
+                    <Image className='w-2/3' src={logo} alt={''}/>
+                  </div>
+
                 </div>
               </div>
             </>
