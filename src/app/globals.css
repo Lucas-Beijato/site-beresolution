@@ -50,3 +50,23 @@ body {
   max-height: 9999px;
   transition: all 150ms cubic-bezier(1, 0, 1, 0);
 }
+
+/* hover glow up effect */
+
+.hoverGlowUp {
+  transition: 150ms ease-in-out;
+}
+
+.hoverGlowUp:hover {
+  transition: 150ms ease-in-out;
+  transform: scale(1.05);
+}
+
+.hoverGlowUp2 {
+  transition: 150ms ease-in-out;
+}
+
+.hoverGlowUp2:hover {
+  transition: 150ms ease-in-out;
+  transform: scale(1.02);
+}

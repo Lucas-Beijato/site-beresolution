@@ -84,9 +84,9 @@ export default function Header() {
                     <h3 className='flex flex-row items-center'>Atividades<IoMdArrowDropdown /></h3>
                   </Link>
                   <div id='atividadesDropDown' className='w-52 flex-col font-normal text-white absolute mt-6 p-3 text-lg hidden bg-BeColorBG rounded-xl'>
-                    <Link className='hover:bg-BeGreenColor hover:text-white p-2 rounded-xl hover:scale-105 transition duration-150' href={'/atividades/distribuicao'}>Distribuidoras</Link>
-                    <Link className='hover:bg-BeGreenColor hover:text-white p-2 rounded-xl hover:scale-105 transition duration-150' href={'/atividades/industria'}>Indústria</Link>
-                    <Link className='hover:bg-BeGreenColor hover:text-white p-2 rounded-xl hover:scale-105 transition duration-150' href={'/atividades/servicos'}>Serviços</Link>
+                    <Link className='hover:bg-BeGreenColor hover:text-white p-2 rounded-xl hover:scale-105 hoverGlowUp' href={'/atividades/distribuicao'}>Distribuidoras</Link>
+                    <Link className='hover:bg-BeGreenColor hover:text-white p-2 rounded-xl hover:scale-105 hoverGlowUp' href={'/atividades/industria'}>Indústria</Link>
+                    <Link className='hover:bg-BeGreenColor hover:text-white p-2 rounded-xl hover:scale-105 hoverGlowUp' href={'/atividades/servicos'}>Serviços</Link>
                   </div>
                 </div>
 
@@ -95,10 +95,10 @@ export default function Header() {
                     <h3 className='flex flex-row items-center'>Soluções<IoMdArrowDropdown /></h3>
                   </Link>
                   <div id='solucoesDropDown' className='w-52 font-normal flex-col text-white absolute mt-6 p-3 text-lg hidden bg-BeColorBG rounded-xl'>
-                    <Link className='hover:bg-BeGreenColor hover:text-white p-2 rounded-xl hover:scale-105 transition duration-150' href={''}>Opção21</Link>
-                    <Link className='hover:bg-BeGreenColor hover:text-white p-2 rounded-xl hover:scale-105 transition duration-150' href={''}>Opção22</Link>
-                    <Link className='hover:bg-BeGreenColor hover:text-white p-2 rounded-xl hover:scale-105 transition duration-150' href={''}>Opção23</Link>
-                    <Link className='hover:bg-BeGreenColor hover:text-white p-2 rounded-xl hover:scale-105 transition duration-150' href={''}>Opção24</Link>
+                    <Link className='hover:bg-BeGreenColor hover:text-white p-2 rounded-xl hover:scale-105 hoverGlowUp' href={''}>Opção21</Link>
+                    <Link className='hover:bg-BeGreenColor hover:text-white p-2 rounded-xl hover:scale-105 hoverGlowUp' href={''}>Opção22</Link>
+                    <Link className='hover:bg-BeGreenColor hover:text-white p-2 rounded-xl hover:scale-105 hoverGlowUp' href={''}>Opção23</Link>
+                    <Link className='hover:bg-BeGreenColor hover:text-white p-2 rounded-xl hover:scale-105 hoverGlowUp' href={''}>Opção24</Link>
                   </div>
                 </div>
 
@@ -106,7 +106,7 @@ export default function Header() {
               </div>
 
               <div className='xl:flex hidden w-1/6 flex-row justify-end items-center'>
-                <a className='transition transform duration-150 hover:scale-105 drop-shadow-md text-xl font-semibold bg-BeGreenColor p-4 rounded-xl text-white' href={baseURL + '/#contato'}>Entre em contato</a>
+                <a className='hoverGlowUp drop-shadow-md text-xl font-semibold bg-BeGreenColor p-4 rounded-xl text-white' href={baseURL + '/#contato'}>Entre em contato</a>
               </div>
             </>
           }
