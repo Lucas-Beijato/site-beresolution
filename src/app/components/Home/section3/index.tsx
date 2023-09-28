@@ -2,6 +2,7 @@ import Title from "@/app/components/title"
 import Section from "@/app/components/containerSection"
 import Image from "next/image"
 import defaulMoneyIcon from '../../../../../public/defaulMoneyIcon.png'
+import Link from "next/link"
 
 export default function Section3() {
 
@@ -12,9 +13,11 @@ export default function Section3() {
 
         <div className="flex w-72 flex-wrap justify-between">
 
-          <div className="bg-white w-full h-32 rounded-xl my-2 flex justify-center items-center hoverGlowUp">
-            <h2 className="text-BeColorBG font-bold text-2xl">Industria</h2>
-          </div>
+          <Link className="w-full h-full" href={"/meu-negocio/industria"}>
+            <div className="bg-white w-full h-32 rounded-xl my-2 flex justify-center items-center hoverGlowUp">
+              <h2 className="text-BeColorBG font-bold text-2xl">Industria</h2>
+            </div>
+          </Link>
 
           <div className="flex flex-col w-AtividadesMiniCards h-AtividadesMiniCards bg-white rounded-xl my-2 justify-start p-2 items-center hoverGlowUp">
             <Image className="mb-1" src={defaulMoneyIcon} alt={""}></Image>
@@ -53,9 +56,11 @@ export default function Section3() {
 
         <div className="flex w-72 flex-wrap justify-between">
 
-          <div className="bg-white w-full h-32 rounded-xl my-2 flex justify-center items-center hoverGlowUp">
-            <h2 className="text-BeColorBG font-bold text-2xl">Distribuição</h2>
-          </div>
+          <Link className="w-full h-full" href={"/meu-negocio/distribuicao"}>
+            <div className="bg-white w-full h-32 rounded-xl my-2 flex justify-center items-center hoverGlowUp">
+              <h2 className="text-BeColorBG font-bold text-2xl">Distribuição</h2>
+            </div>
+          </Link>
 
           <div className="flex flex-col w-AtividadesMiniCards h-AtividadesMiniCards bg-white rounded-xl my-2 justify-start p-2 items-center hoverGlowUp">
             <Image className="mb-1" src={defaulMoneyIcon} alt={""}></Image>
@@ -90,9 +95,11 @@ export default function Section3() {
 
         <div className="flex w-72 flex-wrap justify-between">
 
-          <div className="bg-white w-full h-32 rounded-xl my-2 flex justify-center items-center hoverGlowUp">
-            <h2 className="text-BeColorBG font-bold text-2xl">Serviços</h2>
-          </div>
+          <Link className="w-full h-full" href={"/meu-negocio/servicos"}>
+            <div className="bg-white w-full h-32 rounded-xl my-2 flex justify-center items-center hoverGlowUp">
+              <h2 className="text-BeColorBG font-bold text-2xl">Serviços</h2>
+            </div>
+          </Link>
 
           <div className="flex flex-col w-AtividadesMiniCards h-AtividadesMiniCards bg-white rounded-xl my-2 justify-start p-2 items-center hoverGlowUp">
             <Image className="mb-1" src={defaulMoneyIcon} alt={""}></Image>
