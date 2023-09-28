@@ -80,13 +80,13 @@ export default function Header() {
                 <Link className='hover:text-BeGreenColor px-2' href={baseURL + '/#inicio'}>Início</Link>
 
                 <div onMouseOver={() => setDropdowAtividades('open')} onMouseLeave={() => setDropdowAtividades('close')} className='hover:text-BeGreenColor cursor-pointer flex flex-col transition transform duration-150 px-2 items-center'>
-                  <Link href={'/atividades'}>
-                    <h3 className='flex flex-row items-center'>Atividades<IoMdArrowDropdown /></h3>
+                  <Link href={'/meu-negocio'}>
+                    <h3 className='flex flex-row items-center'>Meu negócio<IoMdArrowDropdown /></h3>
                   </Link>
                   <div id='atividadesDropDown' className='w-52 flex-col font-normal text-white absolute mt-6 p-3 text-lg hidden bg-BeColorBG rounded-xl'>
-                    <Link className='hover:bg-BeGreenColor hover:text-white p-2 rounded-xl hover:scale-105 hoverGlowUp' href={'/atividades/distribuicao'}>Distribuidoras</Link>
-                    <Link className='hover:bg-BeGreenColor hover:text-white p-2 rounded-xl hover:scale-105 hoverGlowUp' href={'/atividades/industria'}>Indústria</Link>
-                    <Link className='hover:bg-BeGreenColor hover:text-white p-2 rounded-xl hover:scale-105 hoverGlowUp' href={'/atividades/servicos'}>Serviços</Link>
+                    <Link className='hover:bg-BeGreenColor hover:text-white p-2 rounded-xl hover:scale-105 hoverGlowUp' href={'/meu-negocio/distribuicao'}>Distribuidoras</Link>
+                    <Link className='hover:bg-BeGreenColor hover:text-white p-2 rounded-xl hover:scale-105 hoverGlowUp' href={'/meu-negocio/industria'}>Indústria</Link>
+                    <Link className='hover:bg-BeGreenColor hover:text-white p-2 rounded-xl hover:scale-105 hoverGlowUp' href={'/meu-negocio/servicos'}>Serviços</Link>
                   </div>
                 </div>
 
@@ -121,7 +121,7 @@ export default function Header() {
                 <div className='w-11/12 flex flex-col items-end text-white bg-BeColorBG p-4 rounded-xl'>
                   <button onClick={() => setMenuMobileOpenClosed('closed')} className='flex pb-2 justify-end'><AiFillCloseSquare className="w-7 h-7 fill-BeGreenColor"/></button>
                   <Link className='w-full border-b-2 border-BeGreenColor hover:bg-BeGreenColor p-2 my-1' onClick={() => setMenuMobileOpenClosed('closed')} href={baseURL + '/#inicio'}>Início</Link>
-                  <Link className='w-full border-b-2 border-BeGreenColor hover:bg-BeGreenColor p-2 my-1' onClick={() => setMenuMobileOpenClosed('closed')} href={'/atividades'}>Atividades</Link>
+                  <Link className='w-full border-b-2 border-BeGreenColor hover:bg-BeGreenColor p-2 my-1' onClick={() => setMenuMobileOpenClosed('closed')} href={'/atividades'}>Meu negócio</Link>
                   <Link className='w-full border-b-2 border-BeGreenColor hover:bg-BeGreenColor p-2 my-1' onClick={() => setMenuMobileOpenClosed('closed')} href={'/solucoes'}>Soluções</Link>
                   <Link className='w-full border-b-2 border-BeGreenColor hover:bg-BeGreenColor p-2 my-1' onClick={() => setMenuMobileOpenClosed('closed')} href={baseURL + '/#sobreNos'}>Sobre nós</Link>
                   <Link className='w-full border-b-2 border-BeGreenColor hover:bg-BeGreenColor p-2 my-1' onClick={() => setMenuMobileOpenClosed('closed')} href={baseURL + '/#contato'}>Entre em contato</Link>
