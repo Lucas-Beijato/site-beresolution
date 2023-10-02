@@ -3,10 +3,11 @@ import logo from '../../../../public/logos/mainLogo.png'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react';
-import { IoMdArrowDropdown } from 'react-icons/io';
+import { IoMdArrowDropdown, IoMdArrowDropright } from 'react-icons/io';
 import { FaBars } from 'react-icons/fa';
 import { AiFillCloseSquare } from 'react-icons/ai'
 
+// Desktop function
 function setDropdowAtividades(isOpen: string) {
   switch (isOpen) {
     case 'open': {
@@ -22,6 +23,7 @@ function setDropdowAtividades(isOpen: string) {
   }
 }
 
+// Desktop function
 function setDropdownSolucoes(isOpen: string) {
   switch (isOpen) {
     case 'open': {
@@ -37,6 +39,7 @@ function setDropdownSolucoes(isOpen: string) {
   }
 }
 
+// Menu Mobile
 function setMenuMobileOpenClosed(action: string) {
   if (action === 'open') {
     document.getElementById('menuMobileModal')?.classList.add('flex')
@@ -51,6 +54,9 @@ function setMenuMobileOpenClosed(action: string) {
 export default function Header() {
 
   const [baseURL, setBaseURL] = useState('')
+
+  const [listAtividades, setStateListAtividades] = useState(false)
+  const [listSolucoes, setListSolucoes] = useState(false)
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
@@ -92,7 +98,7 @@ export default function Header() {
                   </div>
                 </div>
 
-                <div onMouseOver={ () => setDropdownSolucoes('open') } onMouseLeave={ () => setDropdownSolucoes('close') } className='hover:text-BeGreenColor cursor-pointer flex flex-col transition transform duration-150 px-2 items-center'>
+                <div onMouseOver={() => setDropdownSolucoes('open')} onMouseLeave={() => setDropdownSolucoes('close')} className='hover:text-BeGreenColor cursor-pointer flex flex-col transition transform duration-150 px-2 items-center'>
                   <Link href={'/solucoes'}>
                     <h3 className='flex flex-row items-center'>Soluções<IoMdArrowDropdown /></h3>
                   </Link>
@@ -116,19 +122,37 @@ export default function Header() {
           { /* Mobile components */
             <>
               <div className='w-2/6 xl:hidden flex justify-end items-center'>
-                <button className='w-7 h-7' onClick={() => setMenuMobileOpenClosed('open') }><FaBars className='w-full h-full fill-BeGreenColor' /></button>
+                <button className='w-7 h-7' onClick={() => setMenuMobileOpenClosed('open')}><FaBars className='w-full h-full fill-BeGreenColor' /></button>
               </div>
 
               <div id='menuMobileModal' className='hidden bg-[#000] bg-opacity-50 flex-col top-0 bottom-0 left-0 fixed z-10 justify-center items-center w-screen xl:hidden'>
                 <div className='w-11/12 flex flex-col items-end text-white bg-BeColorBG p-4 rounded-xl'>
-                  <button onClick={() => setMenuMobileOpenClosed('closed')} className='flex pb-2 justify-end'><AiFillCloseSquare className="w-7 h-7 fill-BeGreenColor"/></button>
+                  <button onClick={() => setMenuMobileOpenClosed('closed')} className='flex pb-2 justify-end'><AiFillCloseSquare className="w-7 h-7 fill-BeGreenColor" /></button>
                   <Link className='w-full border-b-2 border-BeGreenColor hover:bg-BeGreenColor p-2 my-1' onClick={() => setMenuMobileOpenClosed('closed')} href={baseURL + '/#inicio'}>Início</Link>
-                  <Link className='w-full border-b-2 border-BeGreenColor hover:bg-BeGreenColor p-2 my-1' onClick={() => setMenuMobileOpenClosed('closed')} href={'/atividades'}>Meu negócio</Link>
-                  <Link className='w-full border-b-2 border-BeGreenColor hover:bg-BeGreenColor p-2 my-1' onClick={() => setMenuMobileOpenClosed('closed')} href={'/solucoes'}>Soluções</Link>
+
+                  <div className='flex flex-col w-full'>
+                    <h2 className='w-full border-b-2 border-BeGreenColor hover:bg-BeGreenColor p-2 my-1' onClick={() => setStateListAtividades(!listAtividades)}>Meu negócio</h2>
+                    <div className={`flex flex-col w-full ${listAtividades ? 'content show' : 'content'}`}>
+                      <Link onClick={() => setMenuMobileOpenClosed('closed')} className='p-2 flex flex-row items-center' href=""><IoMdArrowDropright className='fill-BeGreenColor' />Distribuidoras</Link>
+                      <Link onClick={() => setMenuMobileOpenClosed('closed')} className='p-2 flex flex-row items-center' href=""><IoMdArrowDropright className='fill-BeGreenColor' />Indústria</Link>
+                      <Link onClick={() => setMenuMobileOpenClosed('closed')} className='p-2 flex flex-row items-center' href=""><IoMdArrowDropright className='fill-BeGreenColor' />Serviços</Link>
+                    </div>
+                  </div>
+
+                  <div className='flex flex-col w-full'>
+                    <h2 className='w-full border-b-2 border-BeGreenColor hover:bg-BeGreenColor p-2 my-1' onClick={() => setListSolucoes(!listSolucoes)}>Soluções</h2>
+                    <div className={`flex flex-col w-full ${listSolucoes ? 'content show' : 'content'}`}>
+                      <Link onClick={() => setMenuMobileOpenClosed('closed')} className='p-2 flex flex-row items-center' href=""><IoMdArrowDropright className='fill-BeGreenColor' />Serviços 1</Link>
+                      <Link onClick={() => setMenuMobileOpenClosed('closed')} className='p-2 flex flex-row items-center' href=""><IoMdArrowDropright className='fill-BeGreenColor' />Serviços 2</Link>
+                      <Link onClick={() => setMenuMobileOpenClosed('closed')} className='p-2 flex flex-row items-center' href=""><IoMdArrowDropright className='fill-BeGreenColor' />Serviços 3</Link>
+                    </div>
+                  </div>
+
+
                   <Link className='w-full border-b-2 border-BeGreenColor hover:bg-BeGreenColor p-2 my-1' onClick={() => setMenuMobileOpenClosed('closed')} href={baseURL + '/#sobreNos'}>Sobre nós</Link>
                   <Link className='w-full border-b-2 border-BeGreenColor hover:bg-BeGreenColor p-2 my-1' onClick={() => setMenuMobileOpenClosed('closed')} href={baseURL + '/#contato'}>Entre em contato</Link>
                   <div className='flex w-full mt-4 justify-center items-center'>
-                    <Image className='w-2/3' src={logo} alt={''}/>
+                    <Image className='w-2/3' src={logo} alt={''} />
                   </div>
 
                 </div>

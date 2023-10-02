@@ -9,7 +9,7 @@ export default function Section1() {
         <source src="/videos/videoHome.mp4" />
       </video>
       <Section>
-        <div id="inicio" className="flex flex-col z-10 xl:w-[900px] pt-10 xl:pt-40 pb-5 scroll-mt-52">
+        <div id="inicio" className="flex flex-col z-10 xl:w-[900px] pt-10 xl:pt-36 pb-5 scroll-mt-52">
           <h2 className="text-BeGreenColor font-bold text-xl text-center xl:text-2xl">UM POUCO SOBRE NÓS</h2>
           <p className="text-white text-justify text-lg">Somos um time de profissionais apaixonados por tecnologia e aprimoramento de sistemas. Nosso DNA é impulsionado pelo desenvolvimento contínuo e aperfeiçoamento do nosso ERP SIGE. Nossa estrutura inclui departamentos de desenvolvimento, implantação e suporte, garantindo um produto abrangente e adaptável às necessidades de mais de 250 empresas em mais de 13 estados.  Oferecemos gestão eficiente e personalizada para impulsionar nossos clientes.</p>
         </div>
