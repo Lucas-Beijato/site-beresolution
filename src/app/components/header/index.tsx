@@ -72,7 +72,7 @@ export default function Header() {
   })
 
   return (
-    <nav className="w-full top-0 sticky z-20 bg-BeColorBG">
+    <nav className="w-full top-0 sticky z-20 bg-BeColorBG drop-shadow-model1">
       <div className='w-full flex justify-center items-center'>
         <div id='mainContainerHeader' className='w-full xl:w-mediunScreen px-4 xl:px-0 flex flex-row justify-between items-center navAnimationEnd'>
 
@@ -133,9 +133,9 @@ export default function Header() {
                   <div className='flex flex-col w-full'>
                     <h2 className='w-full border-b-2 border-BeGreenColor hover:bg-BeGreenColor p-2 my-1' onClick={() => setStateListAtividades(!listAtividades)}>Meu negócio</h2>
                     <div className={`flex flex-col w-full ${listAtividades ? 'content show' : 'content'}`}>
-                      <Link onClick={() => setMenuMobileOpenClosed('closed')} className='p-2 flex flex-row items-center' href=""><IoMdArrowDropright className='fill-BeGreenColor' />Distribuidoras</Link>
-                      <Link onClick={() => setMenuMobileOpenClosed('closed')} className='p-2 flex flex-row items-center' href=""><IoMdArrowDropright className='fill-BeGreenColor' />Indústria</Link>
-                      <Link onClick={() => setMenuMobileOpenClosed('closed')} className='p-2 flex flex-row items-center' href=""><IoMdArrowDropright className='fill-BeGreenColor' />Serviços</Link>
+                      <Link onClick={() => setMenuMobileOpenClosed('closed')} className='p-2 flex flex-row items-center' href="/meu-negocio/distribuicao"><IoMdArrowDropright className='fill-BeGreenColor' />Distribuidoras</Link>
+                      <Link onClick={() => setMenuMobileOpenClosed('closed')} className='p-2 flex flex-row items-center' href="/meu-negocio/industria"><IoMdArrowDropright className='fill-BeGreenColor' />Indústria</Link>
+                      <Link onClick={() => setMenuMobileOpenClosed('closed')} className='p-2 flex flex-row items-center' href="/meu-negocio/servicos"><IoMdArrowDropright className='fill-BeGreenColor' />Serviços</Link>
                     </div>
                   </div>
 

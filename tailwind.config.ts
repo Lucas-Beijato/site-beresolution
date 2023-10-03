@@ -20,24 +20,26 @@ const config: Config = {
       },
       height: {
         'AtividadesMiniCards': '134px'
+      },
+      backgroundImage: {
+        'bg1Gray': "url('/bgs/fundo 1.png')",
+        'bg2Gray': "url('/bgs/fundo 2.png')",
+        'bg3Gray': "url('/bgs/fundo 3.png')",
+        'bg4Gray': "url('/bgs/fundo 4.png')",
+        'bg5Gray': "url('/bgs/fundo 5.png')",
+        'bg6Gray': "url('/bgs/fundo 6.png')",
+
+        'bg1White': "url('/bgs/fundo 1 branco.png')",
+        'bg2White': "url('/bgs/fundo 2 branco.png')",
+        'bg3White': "url('/bgs/fundo 3 branco.png')",
+        'bg4White': "url('/bgs/fundo 4 branco.png')",
+        'bg5White': "url('/bgs/fundo 5 branco.png')",
+        'bg6White': "url('/bgs/fundo 6 branco.png')",
+      },
+      dropShadow: {
+        'model1': '0 4px 3px rgb(0 0 0 / 0.25)',
       }
     },
-    // screens: {
-    //   '2xl': {'max': '1535px'},
-    //   // => @media (max-width: 1535px) { ... }
-
-    //   'xl': {'max': '1279px'},
-    //   // => @media (max-width: 1279px) { ... }
-
-    //   'lg': {'max': '1023px'},
-    //   // => @media (max-width: 1023px) { ... }
-
-    //   'md': {'max': '767px'},
-    //   // => @media (max-width: 767px) { ... }
-
-    //   'sm': {'max': '639px'},
-    //   // => @media (max-width: 639px) { ... }
-    // }
   },
   plugins: [],
 }

@@ -7,7 +7,7 @@ import Link from "next/link"
 export default function Section3() {
 
   return (
-    <Section removePaddingX>
+    <Section removePaddingX imageBGGray="bg-bg1Gray">
       <Title id="atividades" title={"Atividades"} subtitle={"SETORES QUE ATUAMOS"} />
       <div className="flex xl:w-[900px] flex-row flex-wrap justify-center xl:justify-between items-start pt-5">
 

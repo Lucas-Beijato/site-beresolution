@@ -11,7 +11,7 @@ export default function Section5() {
   const [showHideDesenvolvimento, setShowHideDesenvolvimento] = useState(false)
 
   return (
-    <Section>
+    <Section imageBGGray="bg-bg3Gray">
       <Title title={"Porque a Be Resolution"} subtitle={"A BE RESOLUTION TE AJUDA"} />
 
       <div className="flex flex-col">
