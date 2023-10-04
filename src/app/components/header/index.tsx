@@ -125,7 +125,7 @@ export default function Header() {
                 <button className='w-7 h-7' onClick={() => setMenuMobileOpenClosed('open')}><FaBars className='w-full h-full fill-BeGreenColor' /></button>
               </div>
 
-              <div id='menuMobileModal' className='hidden bg-[#000] bg-opacity-50 flex-col top-0 bottom-0 left-0 fixed z-10 justify-center items-center w-screen xl:hidden'>
+              <div id='menuMobileModal' className='hidden bg-[#000] bg-opacity-50 flex-col h-[100vh] top-0 left-0 fixed z-10 justify-center items-center w-screen xl:hidden'>
                 <div className='w-11/12 flex flex-col items-end text-white bg-BeColorBG p-4 rounded-xl'>
                   <button onClick={() => setMenuMobileOpenClosed('closed')} className='flex pb-2 justify-end'><AiFillCloseSquare className="w-7 h-7 fill-BeGreenColor" /></button>
                   <Link className='w-full border-b-2 border-BeGreenColor hover:bg-BeGreenColor p-2 my-1' onClick={() => setMenuMobileOpenClosed('closed')} href={baseURL + '/#inicio'}>Início</Link>
