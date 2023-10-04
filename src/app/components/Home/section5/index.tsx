@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react"
 import Title from "@/app/components/title"
-import Section from "@/app/components/containerSection"
+import Section from "@/app/components/containerSection1"
 import { BiDownArrowAlt } from "react-icons/bi"
 
 export default function Section5() {
@@ -11,7 +11,7 @@ export default function Section5() {
   const [showHideDesenvolvimento, setShowHideDesenvolvimento] = useState(false)
 
   return (
-    <Section imageBGGray="bg-bg3Gray">
+    <Section bgCustomImg1>
       <Title title={"Porque a Be Resolution"} subtitle={"A BE RESOLUTION TE AJUDA"} />
 
       <div className="flex flex-col">

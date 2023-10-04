@@ -1,4 +1,4 @@
-import Section from "@/app/components/containerSection";
+import Section from "@/app/components/containerSection1";
 
 export default function Solucoes() {
 

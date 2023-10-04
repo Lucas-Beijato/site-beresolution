@@ -35,6 +35,8 @@ const config: Config = {
         'bg4White': "url('/bgs/fundo 4 branco.png')",
         'bg5White': "url('/bgs/fundo 5 branco.png')",
         'bg6White': "url('/bgs/fundo 6 branco.png')",
+
+        'bgCustom1': "url('/bgs/porqueABe_bg1.jpg')"
       },
       dropShadow: {
         'model1': '0 4px 3px rgb(0 0 0 / 0.25)',

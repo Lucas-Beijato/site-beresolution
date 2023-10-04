@@ -1,5 +1,5 @@
 import Title from "@/app/components/title"
-import Section from "@/app/components/containerSection"
+import Section from "@/app/components/containerSection1"
 import Image from "next/image"
 import defaulMoneyIcon from '../../../../../public/defaulMoneyIcon.png'
 import Link from "next/link"
