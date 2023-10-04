@@ -1,5 +1,5 @@
 "use client"
-import { ReactNode } from "react"
+import { ReactNode, useEffect } from "react"
 
 interface SectionProps {
   children: ReactNode,
@@ -13,9 +13,12 @@ interface SectionProps {
 
 export default function Section({ children, bgColorWhite, removePaddingX, imageBGGray, imageBGWhite, bgColorGray, bgCustomImg1 }: SectionProps) {
 
-  if (navigator.userAgent.includes('ios')) {
-    alert('ios detected');
-  }
+  useEffect(() => {
+    let navUser = navigator.userAgent
+    if (navUser.includes('Mac') || navUser.includes('iPhone') || navUser.includes('iPodi') || navUser.includes('Pad')) {
+      alert('Ios or Mac os detected');
+    }
+  }, [])
 
   return (
     <section className={`flex flex-col w-full ${bgColorWhite ? 'bg-white' : ''} ${bgColorGray ? 'bg-BeColorBG' : ''} ${imageBGWhite || ''} ${imageBGWhite ? 'innerShadowWhite' : ''} ${imageBGGray || ''} ${imageBGGray ? 'innerShadowGray' : ''} ${ bgCustomImg1 ? 'bg-bgCustom1 bg-fixed' : ''} bg-cover bg-no-repeat bg-center justify-start items-center`}>
