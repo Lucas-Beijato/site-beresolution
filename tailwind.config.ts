@@ -28,14 +28,12 @@ const config: Config = {
         'bg4Gray': "url('/bgs/webp/fundo 4.webp')",
         'bg5Gray': "url('/bgs/webp/fundo 5.webp')",
         'bg6Gray': "url('/bgs/webp/fundo 6.webp')",
-
         'bg1White': "url('/bgs/webp/fundo 1 branco.webp')",
         'bg2White': "url('/bgs/webp/fundo 2 branco.webp')",
         'bg3White': "url('/bgs/webp/fundo 3 branco.webp')",
         'bg4White': "url('/bgs/webp/fundo 4 branco.webp')",
         'bg5White': "url('/bgs/webp/fundo 5 branco.webp')",
         'bg6White': "url('/bgs/webp/fundo 6 branco.webp')",
-
         'bgCustom1': "url('/bgs/webp/porqueABe_bg1.webp')"
       },
       dropShadow: {

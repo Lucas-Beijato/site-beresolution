@@ -122,7 +122,7 @@ export default function Header() {
           { /* Mobile components */
             <>
               <div className='w-2/6 xl:hidden flex justify-end items-center'>
-                <button className='w-7 h-7' onClick={() => setMenuMobileOpenClosed('open')}><FaBars className='w-full h-full fill-BeGreenColor' /></button>
+                <button title='Abrir menu mobile' className='w-7 h-7' onClick={() => setMenuMobileOpenClosed('open')}><FaBars className='w-full h-full fill-BeGreenColor'/></button>
               </div>
 
               <div id='menuMobileModal' className='hidden bg-[#000] bg-opacity-50 flex-col h-[100vh] top-0 left-0 fixed z-10 justify-center items-center w-screen xl:hidden'>
