@@ -11,7 +11,7 @@ export default function Section5() {
   const [showHideDesenvolvimento, setShowHideDesenvolvimento] = useState(false)
 
   return (
-    <Section bgCustomImg1>
+    <Section imageBG={{ imageColor: 'Custom', chosenImage: 1}}>
       <Title title={"Porque a Be Resolution"} subtitle={"A BE RESOLUTION TE AJUDA"} />
 
       <div className="flex flex-col">

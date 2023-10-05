@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export default function Section4() {
   return (
-    <Section imageBGGray="2">
+    <Section imageBG={{ imageColor: 'Gray', chosenImage: 2}}>
 
       <h2 id="sobreNos" className="text-white w-full text-4xl xl:text-5xl text-start font-bold mb-3 scroll-mt-52">Conheça a <br/><span className="text-BeGreenColor">Be Resolution</span></h2>
       <p className="text-white text-base xl:text-xl text-justify">Nosso negócio é sistema, somos engenheiros de software, analista de sistema, programador, administrador de sistema, contador, sim somos um time que leva na veia tecnologia, tudo que esta relacionado a melhoria de sistema, desenvolvimento de novas rotinas que leve nosso produto a ser maior e melhor a cada dia, esse é o nosso DNA.<br/><br/>

@@ -4,8 +4,8 @@ import Section from "@/app/components/containerSection"
 
 export default function Section1() {
   return (
-    <div className="w-full h-fit overflow-hidden">
-      <video className="videoHome object-cover" autoPlay loop muted>
+    <div className="relative w-full h-fit overflow-hidden">
+      <video className="videoHome" autoPlay loop muted>
         <source src="/videos/videoHome.mp4" />
       </video>
       <Section>

@@ -13,7 +13,7 @@ import logoSIEGE from '../../../../../public/logos/logo siege.png'
 export default function Section2() {
   return (
 
-    <Section imageBGWhite="1" removePaddingX>
+    <Section imageBG={{ imageColor: 'White', chosenImage: 1}} removePaddingX>
 
       <Title id="porqueNossoERP" title={"Porque nosso ERP?"} subtitle={"ENTENDA UM POUCO MAIS"} colorTitleDark />
 
