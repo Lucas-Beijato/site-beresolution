@@ -24,8 +24,8 @@ export default function Section({ children, bgColorWhite, removePaddingX, imageB
     }
   }, [])
 
-  const classesDefault = ` ${(imageBGGray) ? ('bg-bgGray' + imageBGGray) : ''} ${(imageBGWhite) ? ('bg-bgWhite' + imageBGWhite) : ''} `
-  const classesIOS = ` ${(imageBGGray) ? ('bg-bgGrayIOS' + imageBGGray) : ''} ${(imageBGWhite) ? ('bg-bgWhiteIOS' + imageBGWhite) : ''} `
+  const classesDefault = ` ${(imageBGGray) ? (('bg-bgGray' + imageBGGray) + (' innerShadowGray')) : ''} ${(imageBGWhite) ? (('bg-bgWhite' + imageBGWhite) + (' innerShadowWhite')) : ''} `
+  const classesIOS = ` ${(imageBGGray) ? (('bg-bgGrayIOS' + imageBGGray) + (' innerShadowGray')) : ''} ${(imageBGWhite) ? (('bg-bgWhiteIOS' + imageBGWhite) + (' innerShadowWhite')) : ''} `
 
   return (
     <section className={`overflow-hidden flex flex-col w-full ${bgColorWhite ? 'bg-white' : ''} ${bgColorGray ? 'bg-BeColorBG' : ''} ${ isIOS ? classesIOS : classesDefault } bg-cover bg-no-repeat bg-center justify-start items-center`}>
@@ -33,7 +33,3 @@ export default function Section({ children, bgColorWhite, removePaddingX, imageB
     </section>
   )
 }
-
-
-
-// ${imageBGWhite || ''} ${imageBGWhite ? 'innerShadowWhite' : ''} ${imageBGGray || ''} ${imageBGGray ? 'innerShadowGray' : ''} ${ bgCustomImg1 ? 'bg-bgCustom1 bg-fixed' : ''}
