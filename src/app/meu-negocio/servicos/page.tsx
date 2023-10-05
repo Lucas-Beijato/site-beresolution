@@ -1,4 +1,4 @@
-import Section from "@/app/components/containerSection1";
+import Section from "@/app/components/containerSection";
 
 export default function Servicos() {
 
