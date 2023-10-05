@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { FiArrowDown } from "react-icons/fi"
-import Section from "@/app/components/containerSection1"
+import Section from "@/app/components/containerSection"
 
 export default function Section1() {
   return (

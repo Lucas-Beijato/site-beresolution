@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react"
 import Title from "@/app/components/title"
-import Section from "@/app/components/containerSection1"
+import Section from "@/app/components/containerSection"
 import { BiDownArrowAlt } from "react-icons/bi"
 
 export default function Section5() {

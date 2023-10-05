@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Title from "@/app/components/title"
-import Section from "@/app/components/containerSection1";
+import Section from "@/app/components/containerSection";
 // -------------
 import industriaImg from '../../../../../public/imgs/industria-250px.jpg'
 import distribuicaoImg from '../../../../../public/imgs/distribuicao-250px.jpg'
@@ -13,7 +13,7 @@ import logoSIEGE from '../../../../../public/logos/logo siege.png'
 export default function Section2() {
   return (
 
-    <Section imageBGWhite="bg-bg1White" removePaddingX>
+    <Section imageBGWhite="1" removePaddingX>
 
       <Title id="porqueNossoERP" title={"Porque nosso ERP?"} subtitle={"ENTENDA UM POUCO MAIS"} colorTitleDark />
 

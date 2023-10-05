@@ -1,5 +1,5 @@
 import Title from "@/app/components/title"
-import Section from "@/app/components/containerSection1"
+import Section from "@/app/components/containerSection"
 import Image from "next/image"
 import defaulMoneyIcon from '../../../../../public/defaulMoneyIcon.png'
 import Link from "next/link"
@@ -7,7 +7,7 @@ import Link from "next/link"
 export default function Section3() {
 
   return (
-    <Section removePaddingX imageBGGray="bg-bg1Gray">
+    <Section removePaddingX imageBGGray="1">
       <Title id="atividades" title={"Atividades"} subtitle={"SETORES QUE ATUAMOS"} />
       <div className="flex xl:w-[900px] flex-row flex-wrap justify-center xl:justify-between items-start pt-5">
 
