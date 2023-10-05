@@ -6,7 +6,7 @@ interface SectionProps {
   bgColorWhite?: boolean,
   bgColorGray?: boolean,
   removePaddingX?: boolean,
-  imageBG?: { imageColor: string | undefined, chosenImage: number | undefined}
+  imageBG?: { imageColor: string, chosenImage: number }
 }
 
 export default function Section({ children, bgColorWhite, removePaddingX, imageBG, bgColorGray }: SectionProps) {
@@ -47,7 +47,7 @@ export default function Section({ children, bgColorWhite, removePaddingX, imageB
     "url('/bgs/fundo 5 branco.png')",
     "url('/bgs/fundo 6 branco.png')",
   ]
-  const listUrlsImagesIOSCustum = ["url('/bgs/porqueABe_bg1.png')",]
+  const listUrlsImagesIOSCustum = ["url('/bgs/porqueABe_bg1.jpg')",]
 
   useEffect(() => {
     let navUser = navigator.userAgent
