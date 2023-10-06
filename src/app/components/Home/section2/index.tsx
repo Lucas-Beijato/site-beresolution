@@ -19,40 +19,40 @@ export default function Section2() {
 
       <div className="flex h-fit flex-row xl:justify-between justify-center mt-10 w-full flex-wrap">
 
-        <div className="flex box-border flex-col my-1 xl:my-0 shadow-lg hover:drop-shadow-model1 transition duration-150 transform w-250px rounded-lg bg-BeColorBG hoverGlowUp">
-          <Image className="mb-3 rounded-lg" loading="lazy" src={industriaImg} alt={"Icone card sobre setor Industrial"} />
+        <div className="flex box-border flex-col my-1 xl:my-0 shadow-lg h-[350px] xl:h-fit  hover:drop-shadow-model1 transition duration-150 transform w-full xl:w-250px rounded-lg bg-BeColorBG hoverGlowUp">
+          <Image className="mb-3 rounded-lg w-full h-[50%] xl:h-full object-cover" loading="lazy" src={industriaImg} alt={"Icone card sobre setor Industrial"} />
           <div className="px-3">
             <h3 className="text-white font-bold text-xl h-[60px]">1 - Industrial</h3>
             <p className="text-white text-justify text-sm pb-3 h-fit">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>
           </div>
         </div>
 
-        <div className="flex box-border flex-col my-1 xl:my-0 shadow-lg hover:drop-shadow-model1 transition duration-150 transform w-250px rounded-lg bg-BeColorBG hoverGlowUp">
-          <Image className="mb-3 rounded-lg" loading="lazy" src={distribuicaoImg} alt={"Icone card sobre setor Industrial"} />
+        <div className="flex box-border flex-col my-1 xl:my-0 shadow-lg h-[350px] xl:h-fit  hover:drop-shadow-model1 transition duration-150 transform w-full xl:w-250px rounded-lg bg-BeColorBG hoverGlowUp">
+          <Image className="mb-3 rounded-lg w-full h-[50%] xl:h-full object-cover" loading="lazy" src={distribuicaoImg} alt={"Icone card sobre setor Industrial"} />
           <div className="px-3">
             <h3 className="text-white font-bold text-xl h-[60px]">2 - Distribuição</h3>
             <p className="text-white text-justify text-sm pb-3 h-fit">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>
           </div>
         </div>
 
-        <div className="flex box-border flex-col my-1 xl:my-0 shadow-lg hover:drop-shadow-model1 transition duration-150 transform w-250px rounded-lg bg-BeColorBG hoverGlowUp">
-          <Image className="mb-3 rounded-lg" loading="lazy" src={servicosImg} alt={"Icone card sobre setor Industrial"} />
+        <div className="flex box-border flex-col my-1 xl:my-0 shadow-lg h-[350px] xl:h-fit  hover:drop-shadow-model1 transition duration-150 transform w-full xl:w-250px rounded-lg bg-BeColorBG hoverGlowUp">
+          <Image className="mb-3 rounded-lg w-full h-[50%] xl:h-full object-cover" loading="lazy" src={servicosImg} alt={"Icone card sobre setor Industrial"} />
           <div className="px-3">
             <h3 className="text-white font-bold text-xl h-[60px]">3 - Serviços</h3>
             <p className="text-white text-justify text-sm pb-3 h-fit">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>
           </div>
         </div>
 
-        <div className="flex box-border flex-col my-1 xl:my-0 shadow-lg hover:drop-shadow-model1 transition duration-150 transform w-250px rounded-lg bg-BeColorBG hoverGlowUp">
-          <Image className="mb-3 rounded-lg" loading="lazy" src={mobilidadeImg} alt={"Icone card sobre setor Industrial"} />
+        <div className="flex box-border flex-col my-1 xl:my-0 shadow-lg h-[350px] xl:h-fit  hover:drop-shadow-model1 transition duration-150 transform w-full xl:w-250px rounded-lg bg-BeColorBG hoverGlowUp">
+          <Image className="mb-3 rounded-lg w-full h-[50%] xl:h-full object-cover" loading="lazy" src={mobilidadeImg} alt={"Icone card sobre setor Industrial"} />
           <div className="px-3">
             <h3 className="text-white font-bold text-xl h-[60px]">4 - Mobilidade</h3>
             <p className="text-white text-justify text-sm pb-3 h-fit">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>
           </div>
         </div>
 
-        <div className="flex box-border flex-col my-1 xl:my-0 shadow-lg hover:drop-shadow-model1 transition duration-150 transform w-250px rounded-lg bg-BeColorBG hoverGlowUp">
-          <Image className="mb-3 rounded-lg" loading="lazy" src={inteligenciaNegociosImg} alt={"Icone card sobre setor Industrial"} />
+        <div className="flex box-border flex-col my-1 xl:my-0 shadow-lg h-[350px] xl:h-fit  hover:drop-shadow-model1 transition duration-150 transform w-full xl:w-250px rounded-lg bg-BeColorBG hoverGlowUp">
+          <Image className="mb-3 rounded-lg w-full h-[50%] xl:h-full object-cover" loading="lazy" src={inteligenciaNegociosImg} alt={"Icone card sobre setor Industrial"} />
           <div className="px-3">
             <h3 className="text-white font-bold text-xl h-[60px]">5 - Inteligência de Negócios</h3>
             <p className="text-white text-justify text-sm pb-3 h-fit">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>

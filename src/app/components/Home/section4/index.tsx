@@ -13,25 +13,25 @@ export default function Section4() {
         Hoje proporcionamos uma gestão sólida, singular para que nossos clientes sejam cada vez mais eficientes e ágeis no setor em que atuam.</p>
 
       <div className="flex flex-row flex-wrap justify-center xl:justify-between mt-14 mb-10 xl:w-[900px]">
-        <div className="flex flex-col justify-center items-center my-3 xl:my-0 w-52 mt-4">
+        <div className="flex flex-col w-1/2 justify-center items-center my-3 xl:my-0 xl:w-52 mt-4">
           <Image className="flex justify-center w-20" src={defaultIcon} alt={""} />
-          <h3 className="text-BeGreenColor font-bold mt-4">ANOS DE EXPERIÊNCIA</h3>
-          <h2 className="text-white text-5xl font-bold">29</h2>
+          <h3 className="text-BeGreenColor text-sm xl:text-base font-bold mt-4">ANOS DE EXPERIÊNCIA</h3>
+          <h2 className="text-white text-4xl xl:text-5xl font-bold">29</h2>
         </div>
-        <div className="flex flex-col justify-center items-center my-3 xl:my-0 w-52 mt-4">
+        <div className="flex flex-col w-1/2 justify-center items-center my-3 xl:my-0 xl:w-52 mt-4">
           <Image className="flex justify-center w-20" src={defaultIcon} alt={""} />
-          <h3 className="text-BeGreenColor font-bold mt-4">CLIENTES</h3>
-          <h2 className="text-white text-5xl font-bold">+750</h2>
+          <h3 className="text-BeGreenColor text-sm xl:text-base font-bold mt-4">CLIENTES</h3>
+          <h2 className="text-white text-4xl xl:text-5xl font-bold">+750</h2>
         </div>
-        <div className="flex flex-col justify-center items-center my-3 xl:my-0 w-52 mt-4">
+        <div className="flex flex-col w-1/2 justify-center items-center my-3 xl:my-0 xl:w-52 mt-4">
           <Image className="flex justify-center w-20" src={defaultIcon} alt={""} />
-          <h3 className="text-BeGreenColor font-bold mt-4">COLABORADORES</h3>
-          <h2 className="text-white text-5xl font-bold">25</h2>
+          <h3 className="text-BeGreenColor text-sm xl:text-base font-bold mt-4">COLABORADORES</h3>
+          <h2 className="text-white text-4xl xl:text-5xl font-bold">25</h2>
         </div>
-        <div className="flex flex-col justify-center items-center my-3 xl:my-0 w-52 mt-4">
+        <div className="flex flex-col w-1/2 justify-center items-center my-3 xl:my-0 xl:w-52 mt-4">
           <Image className="flex justify-center w-20" src={defaultIcon} alt={""} />
-          <h3 className="text-BeGreenColor font-bold mt-4">PRESENÇA NACIONAL</h3>
-          <h2 className="text-white text-5xl font-bold">100%</h2>
+          <h3 className="text-BeGreenColor text-sm xl:text-base font-bold mt-4">PRESENÇA NACIONAL</h3>
+          <h2 className="text-white text-4xl xl:text-5xl font-bold">100%</h2>
         </div>
       </div>
 
