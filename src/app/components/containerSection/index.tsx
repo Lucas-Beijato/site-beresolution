@@ -29,7 +29,7 @@ export default function Section({ children, bgColorWhite, removePaddingX, imageB
     "url('/bgs/webp/fundo 5 branco.webp')",
     "url('/bgs/webp/fundo 6 branco.webp')",
   ]
-  const listUrlsImagesDefaulCustum = ["url('/bgs/webp/porqueABe_bg1.webp')",]
+  const listUrlsImagesDefaulCustum = ["url('/bgs/webp/porque_ABe.webp')",]
 
   const listUrlsImagesIOSGray = [
     "url('/bgs/fundo 1.png')",
@@ -47,7 +47,7 @@ export default function Section({ children, bgColorWhite, removePaddingX, imageB
     "url('/bgs/fundo 5 branco.png')",
     "url('/bgs/fundo 6 branco.png')",
   ]
-  const listUrlsImagesIOSCustum = ["url('/bgs/porqueABe_bg1.jpg')",]
+  const listUrlsImagesIOSCustum = ["url('/bgs/porque_ABe-ios.jpg')",]
 
   useEffect(() => {
     let navUser = navigator.userAgent
