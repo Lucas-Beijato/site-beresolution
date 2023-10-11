@@ -65,16 +65,20 @@ export default function Header() {
       if (window.scrollY > 0) {
         document.querySelector('#mainContainerHeader')?.classList.add('navAnimationInitial')
         document.querySelector('#mainContainerHeader')?.classList.remove('navAnimationEnd')
+        document.querySelector('#navMenuContainer')?.classList.remove('nav_bg_style_start')
+        document.querySelector('#navMenuContainer')?.classList.add('nav_bg_style_end')
       } else {
         document.querySelector('#mainContainerHeader')?.classList.remove('navAnimationInitial')
         document.querySelector('#mainContainerHeader')?.classList.add('navAnimationEnd')
+        document.querySelector('#navMenuContainer')?.classList.add('nav_bg_style_start')
+        document.querySelector('#navMenuContainer')?.classList.remove('nav_bg_style_end')
       }
     })
     setBaseURL(window.location.origin)
   })
 
   return (
-    <nav className="w-full top-0 sticky z-20 bg-BeColorBG drop-shadow-model1">
+    <nav id='navMenuContainer' className="w-full top-0 sticky z-20 nav_bg_style_start">
       <div className='w-full flex justify-center items-center'>
         <div id='mainContainerHeader' className='w-full xl:w-mediunScreen px-4 xl:px-0 flex flex-row justify-between items-center navAnimationEnd'>
 

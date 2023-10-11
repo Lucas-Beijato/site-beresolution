@@ -32,6 +32,18 @@ body {
   padding-bottom: 1.5rem;
 }
 
+.nav_bg_style_start {
+  background-color: rgba(47, 47, 49, 0);
+  transition: 150ms ease-in-out;
+  transition-delay: 100ms;
+}
+
+.nav_bg_style_end {
+  background-color: rgba(47, 47, 49, 1);
+  transition: 150ms ease-in-out;
+  transition-delay: 100ms;
+}
+
 
 /* Animação para o componente Acordion */
 .content {

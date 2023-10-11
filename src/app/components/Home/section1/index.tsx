@@ -15,7 +15,7 @@ export default function Section1() {
   })
 
   return (
-    <div className="relative w-full h-fit overflow-hidden">
+    <div className="relative w-full h-fit overflow-hidden pt-[108px]">
       <video className="videoHome" autoPlay loop muted>
         <source src="/videos/videoHome.mp4" />
       </video>

@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className='bg-BeColorBG w-full h-fit'>
         <main className='w-full h-fit'>
           <Header />
-          <section className='box-border'>{children}</section>
+          <section className='box-border mt-[-108px]'>{children}</section>
           <Footer />
         </main>
       </body>
