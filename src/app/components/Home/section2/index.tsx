@@ -60,9 +60,13 @@ export default function Section2() {
         </div>
 
       </div>
+
       <div className="flex w-full justify-center items-center" >
+
         <Image className="py-10" src={logoSIEGE} alt={"Logo Sistema SIEGE"} />
+
       </div>
+
     </Section>
 
   )

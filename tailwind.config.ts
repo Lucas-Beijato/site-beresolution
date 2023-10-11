@@ -24,7 +24,7 @@ const config: Config = {
       dropShadow: {
         'model1': '0 4px 3px rgb(0 0 0 / 0.25)',
       }
-    },
+    }
   },
   plugins: [],
 }

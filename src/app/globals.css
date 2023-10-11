@@ -87,3 +87,20 @@ body {
   -moz-box-shadow: inset 0px 0px 76px 78px rgba(255, 255, 255, 1);
   box-shadow: inset 0px 0px 76px 78px rgba(255, 255, 255, 1);
 }
+
+/* Cursor Blinking */
+.blinking {
+  animation-name: blink;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
