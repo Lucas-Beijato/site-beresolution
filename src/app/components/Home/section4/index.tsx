@@ -34,7 +34,7 @@ export default function Section4() {
         </div>
       </div>
 
-      <Link className="bg-BeGreenColor shadow-lg w-fit py-4 rounded-lg px-4 text-xl xl:text-2xl font-semibold text-BeColorBG transition transform duration-150 hover:scale-105" href="#contato">Entre em contato</Link>
+      <Link className="bg-BeGreenColor shadow-lg w-fit py-4 rounded-lg px-4 text-xl xl:text-2xl font-semibold text-white transition transform duration-150 hover:scale-105" href="#contato">Entre em contato</Link>
 
     </Section>
   )
