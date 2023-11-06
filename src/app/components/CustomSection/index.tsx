@@ -1,3 +1,4 @@
+"use client"
 import { ReactNode } from "react";
 
 interface CustomSectionProp {
@@ -10,6 +11,9 @@ interface CustomSectionProp {
 }
 
 export default function CustomSection({ children, removePaddingX, imgURL, imgCustomStyle, colorDark, mobileOff }: CustomSectionProp) {
+
+
+
   return (
     <section className={`overflow-hidden z-[0] w-full relative ${colorDark ? 'bg-BeColorBG': ''}`}>
       { !mobileOff && imgURL && <img className={`${imgCustomStyle} absolute z-[1]`} loading="lazy" src={imgURL} alt="Fundo da seção." /> }

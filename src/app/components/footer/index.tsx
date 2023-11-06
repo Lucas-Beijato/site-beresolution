@@ -18,7 +18,7 @@ export default function Footer() {
 
         <div className="w-full p-5 xl:w-1/2 xl:p-0 flex flex-col justify-start">
           <Link href={baseURL + '/#inicio'}>
-            <img className='w-4/6 xl:w-2/5' loading='lazy' src="/logos/mainLogo.png" alt={'Be Resolution logo'} />
+            <img className='w-4/6 xl:w-2/5' loading='lazy' src="/logos/logoBR.svg" alt={'Be Resolution logo'} />
           </Link>
           <h2 className='text-xl xl:text-3xl font-bold text-white'>Somos</h2>
           <p className='xl:text-xl text-white flex flex-row items-center'><BiSolidRightArrow className='fill-BeGreenColor pr-1' />Rápidos</p>

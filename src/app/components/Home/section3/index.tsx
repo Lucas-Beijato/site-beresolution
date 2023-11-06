@@ -16,11 +16,15 @@ import { BiSolidSticker } from "react-icons/bi"
 export default function Section3() {
 
   return (
-    <CustomSection removePaddingX>
+    <CustomSection
+      removePaddingX
+      imgCustomStyle="h-[100%] top-[0px] right-0 opacity-[20%]"
+      imgURL="/imgs/6425299.svg"
+    >
 
       <Title id="atividades" colorTitleDark title={"Atividades"} subtitle={"SETORES QUE ATUAMOS"} />
 
-      <div className="flex xl:w-[950px] flex-row flex-wrap justify-center xl:justify-between items-start pt-5">
+      <div className="flex xl:w-[950px] right-0 flex-row flex-wrap justify-center xl:justify-between items-start pt-5 z-10">
 
         <div className="flex w-72 flex-wrap justify-between">
 

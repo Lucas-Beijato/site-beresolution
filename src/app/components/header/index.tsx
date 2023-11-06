@@ -82,7 +82,7 @@ export default function Header() {
 
           <div className='w-4/6 max-w-[500px] xl:w-2/6 flex flex-row justify-start items-center'>
             <Link href={baseURL + '/#inicio'}>
-              <img loading='lazy' src="/logos/mainLogo.png" alt={'Be Resolution logo'} />
+              <img className='w-[250px]' loading='lazy' src="/logos/logoBR.svg" alt={'Be Resolution logo'} />
             </Link>
           </div>
 
@@ -156,7 +156,7 @@ export default function Header() {
                   <Link className='w-full border-b-2 border-BeGreenColor hover:bg-BeGreenColor p-2 my-1' onClick={() => setMenuMobileOpenClosed('closed')} href={baseURL + '/#sobreNos'}>Sobre nós</Link>
                   <Link className='w-full border-b-2 border-BeGreenColor hover:bg-BeGreenColor p-2 my-1' onClick={() => setMenuMobileOpenClosed('closed')} href={baseURL + '/#contato'}>Entre em contato</Link>
                   <div className='flex w-full mt-4 justify-center items-center'>
-                    <img className='w-2/3' src="/logos/mainLogo.png" alt={'Logo Be Resolution'} />
+                    <img className='w-2/3' src="/logos/logoBR.svg" alt={'Logo Be Resolution'} />
                   </div>
 
                 </div>

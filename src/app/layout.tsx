@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Be Resolution',
   description: 'Created by RRXP Martech',
   icons: {
-    icon: '/icon/favicon.ico'
+    icon: '/favicon/favicon.ico'
   }
 }
 
