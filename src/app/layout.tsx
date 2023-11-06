@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   return (
     <html className='scroll-smooth' lang="pt-br">
-      <body className='bg-BeColorBG w-full h-fit'>
+      <body className='bg-white w-full h-fit'>
         <main className='w-full h-fit'>
           <Header />
           <section className='box-border mt-[-108px]'>{children}</section>

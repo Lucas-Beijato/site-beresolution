@@ -17,7 +17,7 @@ export default function Footer() {
   })
 
   return (
-    <footer className="w-full flex justify-center items-center py-6">
+    <footer className="w-full flex justify-center items-center py-6 bg-BeColorBG">
       <div className="w-mediunScreen flex justify-center items-center flex-col xl:flex-row">
 
         <div className="w-full p-5 xl:w-1/2 xl:p-0 flex flex-col justify-start">

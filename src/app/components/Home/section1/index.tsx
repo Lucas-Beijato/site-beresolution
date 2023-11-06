@@ -1,8 +1,8 @@
 'use client'
 import Link from "next/link"
 import { FiArrowDown } from "react-icons/fi"
-import Section from "@/app/components/containerSection"
 import { useTypewriter } from 'react-simple-typewriter'
+import DefaultSection from "../../DefaultContainer"
 
 export default function Section1() {
 
@@ -15,11 +15,11 @@ export default function Section1() {
   })
 
   return (
-    <div id="inicio" className="relative w-full h-fit overflow-hidden pt-[108px]">
+    <section id="inicio" className="relative w-full h-fit overflow-hidden pt-[108px]">
       <video className="videoHome" autoPlay loop muted>
         <source src="/videos/videoHome.mp4" />
       </video>
-      <Section>
+      <DefaultSection>
         <div className="flex flex-col z-10 xl:w-[900px] pt-10 xl:pt-36 pb-5 scroll-mt-52">
           <h2 className="text-BeGreenColor font-bold text-4xl text-center xl:text-6xl">Be Resolution</h2>
           <div className="flex flex-row justify-center items-center">
@@ -34,8 +34,8 @@ export default function Section1() {
         </div>
         <Link className="bg-BeGreenColor shadow-lg w-fit px-3 py-3 rounded-lg xl:px-4 mb-20 xl:mb-40 text-xl xl:text-2xl font-semibold text-white hoverGlowUp" href="#atividades">Atividades</Link>
         <Link className="text-BeGreenColor transition transform duration-150 hover:text-white text-lg xl:text-xl flex flex-row justify-center items-center mb-4" href="#porqueNossoERP"><FiArrowDown />VER MAIS</Link>
-      </Section>
-    </div>
+      </DefaultSection>
+    </section>
 
   )
 }
@@ -48,3 +48,11 @@ Nossa estrutura inclui departamentos de desenvolvimento, implantação e suporte
 às necessidades de mais de 250 empresas em mais de 13 estados.  Oferecemos gestão eficiente e personalizada para impulsionar nossos clientes.
 </p>
 */
+
+
+// Preciso criar um roteiro
+// Convidando para um evento em Maringá Paraná
+// Teremos no evento, Happy haour, visitas técinicas, e uma mentoria com Felipe Bernardes e outros cases
+// O evento poderá ser parcelado em até 3 vezes no cartão de crédito
+// Temos que falar bem de Maringá, sobre seus aspectos
+// Evento voltado a Jovens empreendedores do Paraná

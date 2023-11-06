@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Title from "@/app/components/title"
-import Section from "@/app/components/containerSection";
+import DefaultSection from "../../DefaultContainer";
 // -------------
 import industriaImg from '../../../../../public/imgs/industria-250px.jpg'
 import distribuicaoImg from '../../../../../public/imgs/distribuicao-250px.jpg'
@@ -13,7 +13,7 @@ import logoSIEGE from '../../../../../public/logos/logo siege.png'
 export default function Section2() {
   return (
 
-    <Section imageBG={{ imageColor: 'White', chosenImage: 1}} removePaddingX>
+    <DefaultSection removePaddingX>
 
       <Title id="porqueNossoERP" title={"Porque nosso ERP?"} subtitle={"ENTENDA UM POUCO MAIS"} colorTitleDark />
 
@@ -67,7 +67,7 @@ export default function Section2() {
 
       </div>
 
-    </Section>
+    </DefaultSection>
 
   )
 }

@@ -1,6 +1,6 @@
 import Title from "@/app/components/title"
-import Section from "@/app/components/containerSection"
 import Link from "next/link"
+import DefaultSection from "../../DefaultContainer"
 // --------------------------------------------------------------------
 import {
   GiMetalBar, GiOpenedFoodCan, GiMicrochip, GiRobotLeg, GiChemicalDrop, GiGears, GiStethoscope,
@@ -16,8 +16,10 @@ import { BiSolidSticker } from "react-icons/bi"
 export default function Section3() {
 
   return (
-    <Section removePaddingX imageBG={{ imageColor: 'White', chosenImage: 1 }}>
+    <DefaultSection removePaddingX>
+
       <Title id="atividades" colorTitleDark title={"Atividades"} subtitle={"SETORES QUE ATUAMOS"} />
+
       <div className="flex xl:w-[950px] flex-row flex-wrap justify-center xl:justify-between items-start pt-5">
 
         <div className="flex w-72 flex-wrap justify-between">
@@ -138,6 +140,6 @@ export default function Section3() {
         </div>
 
       </div>
-    </Section>
+    </DefaultSection>
   )
 }
