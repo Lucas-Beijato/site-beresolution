@@ -15,9 +15,11 @@ export default function Section2() {
 
     <DefaultSection removePaddingX>
 
+      <img className="absolute z-[0]" loading="lazy" src="/imgs/figure_contact.svg" alt="Imagem de Fundo." />
+
       <Title id="porqueNossoERP" title={"Porque nosso ERP?"} subtitle={"ENTENDA UM POUCO MAIS"} colorTitleDark />
 
-      <div className="flex h-fit xl:h-[331px] flex-row xl:justify-between justify-center mt-10 w-full flex-wrap">
+      <div className="flex h-fit xl:h-[331px] flex-row xl:justify-between justify-center mt-10 w-full flex-wrap z-[1]">
 
         <div className="flex box-border flex-col my-1 xl:my-0 shadow-lg h-full hover:drop-shadow-model1 transition duration-150 transform w-full xl:w-250px rounded-lg bg-BeColorBG hoverGlowUp">
           <Image className="mb-3 rounded-lg w-full h-[160px] max-h-[160px] xl:h-full object-cover" loading="lazy" width='200' height='200' src={industriaImg} alt={"Icone card sobre setor Industrial"} />

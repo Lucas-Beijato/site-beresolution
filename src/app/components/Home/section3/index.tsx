@@ -125,7 +125,7 @@ export default function Section3() {
             <h2 className="font-bold text-center leading-none text-white">Comércio varejista</h2>
           </div>
           <div className="flex flex-col w-AtividadesMiniCards h-AtividadesMiniCards bg-BeColorBG rounded-xl my-2 justify-center p-2 items-center hoverGlowUp">
-            <TbPackages className="h-12 w-12 fill-white stroke-BeGreenColor" />
+            <TbPackages className="h-12 w-12 stroke-BeGreenColor" />
             <h2 className="font-bold text-center leading-none text-white">Comércio atacadista</h2>
           </div>
           <div className="flex flex-col w-AtividadesMiniCards h-AtividadesMiniCards bg-BeColorBG rounded-xl my-2 justify-center p-2 items-center hoverGlowUp">
