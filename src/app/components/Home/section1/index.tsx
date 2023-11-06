@@ -39,20 +39,3 @@ export default function Section1() {
 
   )
 }
-
-
-/*
-<p className="text-white text-justify text-lg">
-Nosso DNA é impulsionado pelo desenvolvimento contínuo e aperfeiçoamento do nosso ERP SIGE.
-Nossa estrutura inclui departamentos de desenvolvimento, implantação e suporte, garantindo um produto abrangente e adaptável
-às necessidades de mais de 250 empresas em mais de 13 estados.  Oferecemos gestão eficiente e personalizada para impulsionar nossos clientes.
-</p>
-*/
-
-
-// Preciso criar um roteiro
-// Convidando para um evento em Maringá Paraná
-// Teremos no evento, Happy haour, visitas técinicas, e uma mentoria com Felipe Bernardes e outros cases
-// O evento poderá ser parcelado em até 3 vezes no cartão de crédito
-// Temos que falar bem de Maringá, sobre seus aspectos
-// Evento voltado a Jovens empreendedores do Paraná
