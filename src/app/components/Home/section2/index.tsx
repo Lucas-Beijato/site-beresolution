@@ -13,9 +13,11 @@ import logoSIEGE from '../../../../../public/logos/logo siege.png'
 export default function Section2() {
   return (
 
-    <DefaultSection removePaddingX>
-
-      <img className="absolute z-[0]" loading="lazy" src="/imgs/figure_contact.svg" alt="Imagem de Fundo." />
+    <DefaultSection
+      removePaddingX
+      imgCustomStyle="w-[200px] h-[200px] top-[100px] left-[] opacity-[]"
+      imgURL="/imgs/figure_contact.svg"
+    >
 
       <Title id="porqueNossoERP" title={"Porque nosso ERP?"} subtitle={"ENTENDA UM POUCO MAIS"} colorTitleDark />
 
@@ -63,7 +65,7 @@ export default function Section2() {
 
       </div>
 
-      <div className="flex w-full justify-center items-center" >
+      <div className="flex w-full justify-center items-center z-10" >
 
         <Image className="py-10" src={logoSIEGE} alt={"Logo Sistema SIEGE"} />
 

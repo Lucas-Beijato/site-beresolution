@@ -11,7 +11,8 @@ export default function Section5() {
   const [showHideDesenvolvimento, setShowHideDesenvolvimento] = useState(false)
 
   return (
-    <DefaultSection imgURL="/imgs/porque_ABe-ios.jpg">
+    <DefaultSection imgURL="/imgs/porque_ABe-ios.jpg" imgCustomStyle="w-full h-full object-cover">
+
       <div className={`flex flex-col z-[10] w-full xl:w-mediunScreen px-3 py-6 xl:py-20 justify-center items-center`}>
 
         <Title title={"Porque a Be Resolution"} subtitle={"A BE RESOLUTION TE AJUDA"} />
