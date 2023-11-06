@@ -12,7 +12,7 @@ export default function Section6() {
 
         </div>
         <div className="flex flex-col w-full xl:w-1/2 p-5 ">
-          <img className="w-full h-full" src="/imgs/figure_contact.svg" alt={"Figura ilustrando contato."} />
+          <img className="w-full h-full" loading="lazy" src="/imgs/figure_contact.svg" alt={"Figura ilustrando contato."} />
         </div>
       </div>
     </CustomSection>
