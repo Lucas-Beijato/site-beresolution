@@ -6,7 +6,7 @@ export default function Section2() {
 
     <DefaultSection
       removePaddingX
-      imgCustomStyle="h-[100%] top-[100px] left-[] opacity-[40%]"
+      imgCustomStyle="h-[100%] top-[0px] left-[0px] opacity-[40%]"
       imgURL="/imgs/figure_contact.svg"
     >
 

@@ -1,7 +1,5 @@
-import Image from "next/image"
 import Title from "@/app/components/title"
 import RdStationFormScript from "../../rdStationForm"
-import contactFigure from '../../../../../public/imgs/figure_contact.svg'
 import DefaultSection from "../../DefaultContainer"
 
 export default function Section6() {
@@ -13,7 +11,7 @@ export default function Section6() {
           <RdStationFormScript/>
         </div>
         <div className="flex flex-col w-full xl:w-1/2 p-5 ">
-          <Image className="w-full h-full" src={contactFigure} alt={"Figura ilustrando contato."} />
+          <img className="w-full h-full" src="/imgs/figure_contact.svg" alt={"Figura ilustrando contato."} />
         </div>
       </div>
     </DefaultSection>
