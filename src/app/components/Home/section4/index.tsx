@@ -1,12 +1,10 @@
 import Link from "next/link"
 import CustomSection from "../../CustomSection"
+import Animation from "../../animationSpinning"
 
 export default function Section4() {
   return (
-    <CustomSection
-      imgCustomStyle="w-[70%] left-[-15%] opacity-[10%]"
-      imgURL="/imgs/Animation.svg"
-    >
+    <CustomSection CustomBGComponent={<Animation/>}>
 
       <h2 id="sobreNos" className="text-BeColorBG w-full z-10 text-4xl xl:text-5xl text-start font-bold mb-3 scroll-mt-52">Conheça a <br/><span className="text-BeGreenColor">Be Resolution</span></h2>
       <p className="text-BeColorBG text-base xl:text-xl z-10 text-justify">Nosso negócio é sistema, somos engenheiros de software, analista de sistema, programador, administrador de sistema, contador, sim somos um time que leva na veia tecnologia, tudo que esta relacionado a melhoria de sistema, desenvolvimento de novas rotinas que leve nosso produto a ser maior e melhor a cada dia, esse é o nosso DNA.<br/><br/>

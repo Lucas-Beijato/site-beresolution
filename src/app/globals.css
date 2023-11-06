@@ -94,6 +94,7 @@ body {
   -moz-box-shadow: inset 0px 0px 76px 78px rgba(45, 47, 49, 1);
   box-shadow: inset 0px 0px 76px 78px rgba(45, 47, 49, 1);
 }
+
 .innerShadowWhite {
   -webkit-box-shadow: inset 0px 0px 76px 78px rgba(255, 255, 255, 1);
   -moz-box-shadow: inset 0px 0px 76px 78px rgba(255, 255, 255, 1);
@@ -114,5 +115,25 @@ body {
 
   to {
     opacity: 0;
+  }
+}
+
+
+/* Animation Component Class */
+#Layer_2 {
+  animation-name: spin;
+  animation-duration: 20000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: center center;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
   }
 }
