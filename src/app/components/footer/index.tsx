@@ -18,7 +18,7 @@ export default function Footer() {
 
         <div className="w-full p-5 xl:w-1/2 xl:p-0 flex flex-col justify-start">
           <Link href={baseURL + '/#inicio'}>
-            <img className='w-4/6 xl:w-2/5' loading='lazy' src="/logos/logoBR.svg" alt={'Be Resolution logo'} />
+            <img className='w-4/6 xl:w-2/5' width={"260"} height={"39"} loading='lazy' src="/logos/logoBR.svg" alt={'Be Resolution logo'} />
           </Link>
           <h2 className='text-xl xl:text-3xl font-bold text-white'>Somos</h2>
           <p className='xl:text-xl text-white flex flex-row items-center'><BiSolidRightArrow className='fill-BeGreenColor pr-1' />Rápidos</p>
@@ -32,13 +32,13 @@ export default function Footer() {
             <h3 className='text-lg xl:text-xl text-white py-2'>Nossas Redes e Contatos:</h3>
             <div className='flex flex-row'>
               <Link href={'tel:4430280123'}>
-                <img loading='lazy' className='mx-1 hover:scale-105 w-10 hoverGlowUp' src="/VectorPhone.png" alt={'Telefone Be Resolution'} />
+                <img loading='lazy' width={"40"} height={"40"} className='mx-1 hover:scale-105 w-10 hoverGlowUp' src="/VectorPhone.png" alt={'Telefone Be Resolution'} />
               </Link>
               <Link target='_blank' href='https://www.instagram.com/beresolution/'>
-                <img loading='lazy' className='mx-1 hover:scale-105 w-10 hoverGlowUp' src="/VectorInsta.png" alt={'Instagram Be Resolution'} />
+                <img loading='lazy' width={"40"} height={"40"} className='mx-1 hover:scale-105 w-10 hoverGlowUp' src="/VectorInsta.png" alt={'Instagram Be Resolution'} />
               </Link>
               <Link target='_blank' href='https://www.facebook.com/beresolution'>
-                <img loading='lazy' className='mx-1 hover:scale-105 w-10 hoverGlowUp' src="/VectorFace.png" alt={'Facebook Be Resolution'} />
+                <img loading='lazy' width={"40"} height={"40"} className='mx-1 hover:scale-105 w-10 hoverGlowUp' src="/VectorFace.png" alt={'Facebook Be Resolution'} />
               </Link>
             </div>
             <Link href='mailto:contato@beresolution.com.br'>

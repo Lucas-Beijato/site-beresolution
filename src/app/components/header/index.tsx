@@ -82,7 +82,7 @@ export default function Header() {
 
           <div className='w-4/6 max-w-[500px] xl:w-2/6 flex flex-row justify-start items-center'>
             <Link href={baseURL + '/#inicio'}>
-              <img className='w-[250px]' loading='lazy' src="/logos/logoBR.svg" alt={'Be Resolution logo'} />
+              <img className='w-[250px]' width={"250"} height={"250"} loading='lazy' src="/logos/logoBR.svg" alt={'Be Resolution logo'} />
             </Link>
           </div>
 

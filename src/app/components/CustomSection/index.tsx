@@ -12,7 +12,6 @@ interface CustomSectionProp {
 }
 
 export default function CustomSection({ children, removePaddingX, imgURL, imgCustomStyle, colorDark, mobileOff, CustomBGComponent }: CustomSectionProp) {
-
   return (
     <section className={`overflow-hidden z-[0] w-full relative ${colorDark ? 'bg-BeColorBG': ''}`}>
       {imgURL && <img className={`${imgCustomStyle} hidden xl:block absolute z-[1]`} loading="lazy" src={imgURL} alt="Fundo da seção." /> }
