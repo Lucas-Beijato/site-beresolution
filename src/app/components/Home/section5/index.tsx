@@ -1,8 +1,9 @@
 "use client"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Title from "@/app/components/title"
 import { BiDownArrowAlt } from "react-icons/bi"
 import CustomSection from "../../CustomSection"
+import { IsIOS } from "@/app/funcs"
 
 export default function Section5() {
 
@@ -10,8 +11,16 @@ export default function Section5() {
   const [showHideSuporte, setShowHideSuporte] = useState(false)
   const [showHideDesenvolvimento, setShowHideDesenvolvimento] = useState(false)
 
+  const [IsIOSVar, setIsIOS] = useState(false);
+
+  useEffect(() => {
+    let isIos = IsIOS()
+    setIsIOS(isIos)
+  }, [])
+
+
   return (
-    <CustomSection imgURL="/imgs/porque_ABe-ios.jpg" imgCustomStyle="w-full h-full object-cover">
+    <CustomSection imgURL={`/imgs/porque_ABe.${ IsIOSVar ? "jpg" : "webp" }`} imgCustomStyle="w-full h-full object-cover">
 
       <div className={`flex flex-col z-[10] w-full xl:w-mediunScreen px-3 py-6 xl:py-20 justify-center items-center`}>
 
