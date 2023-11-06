@@ -6,8 +6,8 @@ export default function Section2() {
 
     <CustomSection
       removePaddingX
-      imgCustomStyle="h-[100%] top-[0px] left-[0px] opacity-[30%]"
-      imgURL="/imgs/figure_contact.svg"
+      imgCustomStyle="h-[100%] top-[0px] left-[0px] opacity-[20%]"
+      imgURL="/imgs/7040907.svg"
     >
 
       <Title id="porqueNossoERP" title={"Porque nosso ERP?"} subtitle={"ENTENDA UM POUCO MAIS"} colorTitleDark />

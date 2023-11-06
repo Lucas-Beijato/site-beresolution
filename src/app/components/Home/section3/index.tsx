@@ -18,7 +18,7 @@ export default function Section3() {
   return (
     <CustomSection
       removePaddingX
-      imgCustomStyle="h-[100%] top-[0px] right-0 opacity-[20%]"
+      imgCustomStyle="h-[100%] top-[0px] right-0 opacity-[10%]"
       imgURL="/imgs/6425299.svg"
     >
 
