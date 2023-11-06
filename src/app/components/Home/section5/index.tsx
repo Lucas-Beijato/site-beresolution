@@ -2,7 +2,7 @@
 import { useState } from "react"
 import Title from "@/app/components/title"
 import { BiDownArrowAlt } from "react-icons/bi"
-import DefaultSection from "../../DefaultContainer"
+import CustomSection from "../../CustomSection"
 
 export default function Section5() {
 
@@ -11,7 +11,7 @@ export default function Section5() {
   const [showHideDesenvolvimento, setShowHideDesenvolvimento] = useState(false)
 
   return (
-    <DefaultSection imgURL="/imgs/porque_ABe-ios.jpg" imgCustomStyle="w-full h-full object-cover">
+    <CustomSection imgURL="/imgs/porque_ABe-ios.jpg" imgCustomStyle="w-full h-full object-cover">
 
       <div className={`flex flex-col z-[10] w-full xl:w-mediunScreen px-3 py-6 xl:py-20 justify-center items-center`}>
 
@@ -83,6 +83,6 @@ export default function Section5() {
         </div>
 
       </div>
-    </DefaultSection>
+    </CustomSection>
   )
 }

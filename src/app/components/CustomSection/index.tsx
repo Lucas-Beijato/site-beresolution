@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-interface DefaultSectionProp {
+interface CustomSectionProp {
   children: ReactNode,
   removePaddingX?: boolean,
   imgURL?: string,
@@ -9,7 +9,7 @@ interface DefaultSectionProp {
   mobileOff?: boolean
 }
 
-export default function DefaultSection({ children, removePaddingX, imgURL, imgCustomStyle, colorDark, mobileOff }: DefaultSectionProp) {
+export default function CustomSection({ children, removePaddingX, imgURL, imgCustomStyle, colorDark, mobileOff }: CustomSectionProp) {
   return (
     <section className={`overflow-hidden z-[0] w-full relative ${colorDark ? 'bg-BeColorBG': ''}`}>
       { !mobileOff && imgURL && <img className={`${imgCustomStyle} absolute z-[1]`} loading="lazy" src={imgURL} alt="Fundo da seção." /> }

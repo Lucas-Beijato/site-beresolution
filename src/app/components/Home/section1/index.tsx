@@ -2,7 +2,7 @@
 import Link from "next/link"
 import { FiArrowDown } from "react-icons/fi"
 import { useTypewriter } from 'react-simple-typewriter'
-import DefaultSection from "../../DefaultContainer"
+import CustomSection from "../../CustomSection"
 
 export default function Section1() {
 
@@ -19,7 +19,7 @@ export default function Section1() {
       <video className="videoHome" autoPlay loop muted>
         <source src="/videos/videoHome.mp4" />
       </video>
-      <DefaultSection>
+      <CustomSection>
         <div className="flex flex-col z-10 xl:w-[900px] pt-10 xl:pt-36 pb-5 scroll-mt-52">
           <h2 className="text-BeGreenColor font-bold text-4xl text-center xl:text-6xl">Be Resolution</h2>
           <div className="flex flex-row justify-center items-center">
@@ -34,7 +34,7 @@ export default function Section1() {
         </div>
         <Link className="bg-BeGreenColor shadow-lg w-fit px-3 py-3 rounded-lg xl:px-4 mb-20 xl:mb-40 text-xl xl:text-2xl font-semibold text-white hoverGlowUp" href="#atividades">Atividades</Link>
         <Link className="text-BeGreenColor transition transform duration-150 hover:text-white text-lg xl:text-xl flex flex-row justify-center items-center mb-4" href="#porqueNossoERP"><FiArrowDown />VER MAIS</Link>
-      </DefaultSection>
+      </CustomSection>
     </section>
 
   )

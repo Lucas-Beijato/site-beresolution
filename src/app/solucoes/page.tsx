@@ -1,10 +1,10 @@
-import DefaultSection from "../components/DefaultContainer"
+import CustomSection from "../components/CustomSection"
 
 export default function Solucoes() {
 
   return (
-    <DefaultSection>
+    <CustomSection>
       <h2 className="text-BeGreenColor font-black text-center text-2xl">Em desenvolvimento!</h2>
-    </DefaultSection>
+    </CustomSection>
   )
 }

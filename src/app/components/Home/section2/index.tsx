@@ -1,10 +1,10 @@
 import Title from "@/app/components/title"
-import DefaultSection from "../../DefaultContainer";
+import CustomSection from "../../CustomSection";
 
 export default function Section2() {
   return (
 
-    <DefaultSection
+    <CustomSection
       removePaddingX
       imgCustomStyle="h-[100%] top-[0px] left-[0px] opacity-[40%]"
       imgURL="/imgs/figure_contact.svg"
@@ -60,7 +60,7 @@ export default function Section2() {
         <img className="py-10" src="/logos/logo siege.png" alt={"Logo Sistema SIEGE"} />
       </div>
 
-    </DefaultSection>
+    </CustomSection>
 
   )
 }

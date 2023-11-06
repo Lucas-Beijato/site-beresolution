@@ -1,11 +1,9 @@
-import Image from "next/image"
-import defaultIcon from '../../../../../public/defaultIcon.png'
 import Link from "next/link"
-import DefaultSection from "../../DefaultContainer"
+import CustomSection from "../../CustomSection"
 
 export default function Section4() {
   return (
-    <DefaultSection>
+    <CustomSection>
 
       <h2 id="sobreNos" className="text-BeColorBG w-full z-[1] text-4xl xl:text-5xl text-start font-bold mb-3 scroll-mt-52">Conheça a <br/><span className="text-BeGreenColor">Be Resolution</span></h2>
       <p className="text-BeColorBG text-base xl:text-xl z-[1] text-justify">Nosso negócio é sistema, somos engenheiros de software, analista de sistema, programador, administrador de sistema, contador, sim somos um time que leva na veia tecnologia, tudo que esta relacionado a melhoria de sistema, desenvolvimento de novas rotinas que leve nosso produto a ser maior e melhor a cada dia, esse é o nosso DNA.<br/><br/>
@@ -13,28 +11,28 @@ export default function Section4() {
 
       <div className="flex flex-row flex-wrap z-[1] justify-center xl:justify-between mt-14 mb-10 xl:w-[900px]">
         <div className="flex flex-col w-1/2 justify-center items-center my-3 xl:my-0 xl:w-52 mt-4">
-          <Image className="flex justify-center w-20" src={defaultIcon} alt={""} />
+          <img className="flex justify-center w-20" src="/defaultIcon.png" alt={""} />
           <h3 className="text-BeGreenColor text-sm xl:text-base font-bold mt-4">ANOS DE EXPERIÊNCIA</h3>
           <h2 className="text-BeColorBG text-4xl xl:text-5xl font-bold">29</h2>
         </div>
         <div className="flex flex-col w-1/2  z-[1]justify-center items-center my-3 xl:my-0 xl:w-52 mt-4">
-          <Image className="flex justify-center w-20" src={defaultIcon} alt={""} />
+          <img className="flex justify-center w-20" src="/defaultIcon.png" alt={""} />
           <h3 className="text-BeGreenColor text-sm xl:text-base font-bold mt-4">CLIENTES</h3>
           <h2 className="text-BeColorBG text-4xl xl:text-5xl font-bold">+750</h2>
         </div>
         <div className="flex flex-col w-1/2 z-[1] justify-center items-center my-3 xl:my-0 xl:w-52 mt-4">
-          <Image className="flex justify-center w-20" src={defaultIcon} alt={""} />
+          <img className="flex justify-center w-20" src="/defaultIcon.png" alt={""} />
           <h3 className="text-BeGreenColor text-sm xl:text-base font-bold mt-4">COLABORADORES</h3>
           <h2 className="text-BeColorBG text-4xl xl:text-5xl font-bold">25</h2>
         </div>
         <div className="flex flex-col w-1/2 z-[1] justify-center items-center my-3 xl:my-0 xl:w-52 mt-4">
-          <Image className="flex justify-center w-20" src={defaultIcon} alt={""} />
+          <img className="flex justify-center w-20" src="/defaultIcon.png" alt={""} />
           <h3 className="text-BeGreenColor text-sm xl:text-base font-bold mt-4">PRESENÇA NACIONAL</h3>
           <h2 className="text-BeColorBG text-4xl xl:text-5xl font-bold">100%</h2>
         </div>
       </div>
 
       <Link className="bg-BeGreenColor shadow-lg z-[1] w-fit py-4 rounded-lg px-4 text-xl xl:text-2xl font-semibold text-white transition transform duration-150 hover:scale-105" href="#contato">Entre em contato</Link>
-    </DefaultSection>
+    </CustomSection>
   )
 }

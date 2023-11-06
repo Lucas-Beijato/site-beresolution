@@ -1,6 +1,6 @@
 import Title from "@/app/components/title"
 import Link from "next/link"
-import DefaultSection from "../../DefaultContainer"
+import CustomSection from "../../CustomSection"
 // --------------------------------------------------------------------
 import {
   GiMetalBar, GiOpenedFoodCan, GiMicrochip, GiRobotLeg, GiChemicalDrop, GiGears, GiStethoscope,
@@ -16,7 +16,7 @@ import { BiSolidSticker } from "react-icons/bi"
 export default function Section3() {
 
   return (
-    <DefaultSection removePaddingX>
+    <CustomSection removePaddingX>
 
       <Title id="atividades" colorTitleDark title={"Atividades"} subtitle={"SETORES QUE ATUAMOS"} />
 
@@ -140,6 +140,6 @@ export default function Section3() {
         </div>
 
       </div>
-    </DefaultSection>
+    </CustomSection>
   )
 }
