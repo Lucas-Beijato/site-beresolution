@@ -16,6 +16,7 @@ export default function Section2() {
   return (
 
     <CustomSection
+      mobileOff
       removePaddingX
       imgCustomStyle="h-[100%] top-[0px] left-[0px] opacity-[20%]"
       imgURL="/imgs/7040907.svg"
