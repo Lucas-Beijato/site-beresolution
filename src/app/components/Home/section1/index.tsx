@@ -1,18 +1,9 @@
-'use client'
 import Link from "next/link"
 import { FiArrowDown } from "react-icons/fi"
-import { useTypewriter } from 'react-simple-typewriter'
 import CustomSection from "../../CustomSection"
+import TypewriterComponent from "./components/typewriter"
 
 export default function Section1() {
-
-  const [text] = useTypewriter({
-    words: ['Rápidos', 'Diferentes', 'Efetivos'],
-    loop: true,
-    delaySpeed: 3000,
-    typeSpeed: 95,
-    deleteSpeed: 30,
-  })
 
   return (
     <section id="inicio" className="relative w-full h-fit overflow-hidden pt-[108px]">
@@ -22,14 +13,7 @@ export default function Section1() {
       <CustomSection>
         <div className="flex flex-col z-10 xl:w-[900px] pt-10 xl:pt-36 pb-5 scroll-mt-52">
           <h2 className="text-BeGreenColor font-bold text-4xl text-center xl:text-6xl">Be Resolution</h2>
-          <div className="flex flex-row w-full justify-center items-center">
-            <span className="text-white text-2xl xl:text-5xl font-bold py-3">
-              <span className="text-BeGreenColor">{'{ Somos: \''}</span>
-              {text}
-              <span className='text-white font-bold blinking'>{'|'}</span>
-              <span className="text-BeGreenColor">{'\' }'}</span>
-            </span>
-          </div>
+            <TypewriterComponent/>
           <p className="text-center text-white font-semibold text-xl xl:text-2xl">Somos um time de profissionais apaixonados por tecnologia e aprimoramento de sistemas.</p>
         </div>
         <Link className="bg-BeGreenColor shadow-lg w-fit px-3 py-3 rounded-lg xl:px-4 mb-20 xl:mb-40 text-xl xl:text-2xl font-semibold text-white hoverGlowUp" href="#atividades">Atividades</Link>
