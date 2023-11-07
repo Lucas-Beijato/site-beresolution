@@ -58,7 +58,7 @@ export default function Section2() {
         </div>
 
         <div className="flex box-border flex-col my-1 xl:my-0 shadow-lg h-full hover:drop-shadow-model1 transition duration-150 transform w-full xl:w-250px rounded-lg bg-BeColorBG hoverGlowUp">
-          <img className="mb-3 rounded-lg w-full h-[160px] max-h-[160px] xl:h-full object-cover" width={"160"} height={"160"} loading="lazy" src={`/imgs/inteligencia_negocios-250px.${IsIOSVar ? "jpg" : "webp"}`} alt={"Icone card sobre setor Industrial"} />
+          <img className="mb-3 rounded-lg w-full h-[160px] max-h-[160px] xl:h-full object-cover" width={"160"} height={"160"} loading="lazy" src={`/imgs/inteligencia-negocios-250px.${IsIOSVar ? "jpg" : "webp"}`} alt={"Icone card sobre setor Industrial"} />
           <div className="px-3">
           <h3 className="text-white font-bold text-xl xl:h-[60px]">5 - Inteligência de Negócios</h3>
             <p className="text-white text-justify text-sm pb-3 h-fit">BI e Dashboard e uma única base dados. O poder da extração e análise de dados a favor do seu negócio.</p>
