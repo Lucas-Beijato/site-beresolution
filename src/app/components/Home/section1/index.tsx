@@ -22,8 +22,8 @@ export default function Section1() {
       <CustomSection>
         <div className="flex flex-col z-10 xl:w-[900px] pt-10 xl:pt-36 pb-5 scroll-mt-52">
           <h2 className="text-BeGreenColor font-bold text-4xl text-center xl:text-6xl">Be Resolution</h2>
-          <div className="flex flex-row justify-center items-center">
-            <span className="text-white text-3xl xl:text-5xl font-bold py-3">
+          <div className="flex flex-row w-full justify-center items-center">
+            <span className="text-white text-2xl xl:text-5xl font-bold py-3">
               <span className="text-BeGreenColor">{'{ Somos: \''}</span>
               {text}
               <span className='text-white font-bold blinking'>{'|'}</span>
